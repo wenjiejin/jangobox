@@ -1,0 +1,101 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "My Repertoire" %}{% endblock %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+        <dl class="what_next">
+            {% ifsetting ACCOUNT_OPEN_SIGNUP %}
+            {% else %}
+                {% if user.is_staff %}
+                    <dt><a href="{% url admin_invite_user %}">invite more people to the site</a> [admin only]</dt>
+                    <dd>so more people can share in the fun.</dd>
+                {% endif %}
+            {% endifsetting %}
+        </dl>
+        <div class="row">
+            <div class="span4">
+            {% block column-1 %}
+                <h2>Reserved</h2>
+                {% if repertoire_reserved_list %}
+                <p>
+					<ul>
+					{% for repertoire in repertoire_reserved_list %}
+					    <li><a href="/music/compositions/{{ repertoire.piece.id }}/">{{ repertoire.piece.title }}</a></li>
+					{% endfor %}
+					</ul>
+				</p>
+				{% endif %}
+            {% endblock %}
+            </div>
+            <div class="span4">
+            {% block column-2 %}
+                <h2>Practicing</h2>
+                {% if repertoire_practicing_list %}
+                <p>
+					<ul>
+					{% for repertoire in repertoire_practicing_list %}
+					    <li><a href="/music/compositions/{{ repertoire.piece.id }}/">{{ repertoire.piece.title }}</a></li>
+					{% endfor %}
+					</ul>
+				</p>
+				{% endif %}
+            {% endblock %}
+            </div>
+        </div>
+        <div>
+            <h2>My Videos</h2>
+            <div class="row,video_list">
+                <p>Original</p>
+                {% if ori_video_list %}
+                <div class="row">
+                {% for video in video_list %}
+                 <div class="video">
+                     {{video.embeded|safe}}
+                 </div>
+                {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="row,video_list">
+                <p>Favorite</p>
+                {% if fav_video_list %}
+                <div class="row">
+                {% for video in fav_video_list %}
+                    <div class="video">
+                        {{video.embeded|safe}}
+                    </div>
+                {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div>
+            <h2>My Events</h2>
+            <div class="event_list">
+                {% if event_list %}
+                <div class="row">
+                    <ul>
+	                {% for event in event_list %}
+	                   <li><a href="/music/events/{{event.id}}/">{{event.title}}, {{event.time}}, {{event.location}}</a></li>
+	                {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        {% url acct_login as login_url %}
+        <p class="what_next">
+            {% ifsetting ACCOUNT_OPEN_SIGNUP %}
+                {% url acct_signup as signup_url %}
+                {% blocktrans %}Start by <a href="{{ signup_url }}">signing up</a> and <a href="{{ login_url }}">logging in</a>.{% endblocktrans %}
+            {% else %}
+                {% blocktrans %}Start by <a href="{{ login_url }}">logging in</a>.{% endblocktrans %}
+            {% endifsetting %}
+        </p>
+    {% endif %}
+{% endblock %}

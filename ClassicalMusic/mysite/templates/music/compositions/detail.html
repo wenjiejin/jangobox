@@ -1,0 +1,10 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans composition.title %}{% endblock %}
+
+{% block body %}
+    <h1>{{ composition.title }}, {{ composition.category }}</h1>
+{% endblock %}

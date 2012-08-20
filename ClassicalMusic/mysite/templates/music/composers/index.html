@@ -1,0 +1,18 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Browse Composers" %}{% endblock %}
+
+{% block body %}
+	{% if composer_list %}
+	    <ul>
+	    {% for composer in composer_list %}
+	        <li><a href="/music/composers/{{ composer.id }}/">{{ composer.last_name }}</a></li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <p>No composers are available.</p>
+	{% endif %}
+{% endblock %}

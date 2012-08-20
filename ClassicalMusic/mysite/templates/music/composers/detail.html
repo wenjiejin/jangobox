@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans composer.last_name %}{% endblock %}
+
+{% block body %}
+    <img src="{{ composer.picture }}" alt="composer face" height="42" width="42" />
+	<h1>{{ composer.last_name }}, {{ composer.first_name }}</h1>
+	<ul>
+	{% for composition in composer.composition_set.all %}
+	    <li><a href="/music/compositions/{{ composition.id }}/">{{ composition.title }}</a></li>
+	{% endfor %}
+	</ul>
+
+{% endblock %}

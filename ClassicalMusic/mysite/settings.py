@@ -28,12 +28,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'dev.db',                      # Or path to database file if using sqlite3.
-        'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': 'root',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dev.db',                    
+        'USER': 'root',                      
+        'PASSWORD': 'root',                  
+        'HOST': '',                      
+        'PORT': '',                      
     }
 }
 
@@ -173,6 +173,7 @@ INSTALLED_APPS = [
     # project
     "about",
     "profiles",
+    "music"
 ]
 
 FIXTURE_DIRS = [
@@ -202,7 +203,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
-LOGIN_REDIRECT_URLNAME = "what_next"
+LOGIN_REDIRECT_URLNAME = "repertoire"
 LOGOUT_REDIRECT_URLNAME = "home"
 
 EMAIL_CONFIRMATION_DAYS = 2

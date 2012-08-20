@@ -3,8 +3,62 @@
         "pk": 1, 
         "model": "sites.site", 
         "fields": {
-            "domain": "example.com", 
-            "name": "example.com"
+            "domain": "ClazzicalMusic.com", 
+            "name": "ClazzicalMusic.com"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "music.composer", 
+        "fields": {
+            "first_name": "Wolfgang Amadeus", 
+            "last_name": "Mozart"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "music.composition", 
+        "fields": {
+            "composer": 1, 
+            "title": "Abendempfindung",
+            "category": "Songs; For voice, piano",
+            "year": "1787",
+            "Instrumentation": "Voice and Piano",
+            "key": "F major",
+            "opus_catalogue_number": "K.523"
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "music.composition", 
+        "fields": {
+            "composer": 1, 
+            "title": "Adagio and Allegro",
+            "category": "Adagios; Allegros; For mechanical organ",
+            "year": "1790",
+            "Instrumentation": "Mechanical Organ",
+            "key": "F minor",
+            "opus_catalogue_number": "K.594"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "music.repertoire", 
+        "fields": {
+            "user": 1, 
+            "piece": 1,
+            "reserved": true,
+            "practicing": false
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "music.repertoire", 
+        "fields": {
+            "user": 1, 
+            "piece": 2,
+            "reserved": false,
+            "practicing": true
         }
     }
 ]
