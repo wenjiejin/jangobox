@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Browse Compositions" %}{% endblock %}
+
+{% block body %}
+    {% if composition_list %}
+    <ul>
+    {% for composition in composition_list %}
+        <li><a href="/music/compositions/{{ composition.id }}/">{{ composition.title }}</a></li>
+    {% endfor %}
+    </ul>
+	{% else %}
+	    <p>No compositions are available.</p>
+	{% endif %}
+{% endblock %}

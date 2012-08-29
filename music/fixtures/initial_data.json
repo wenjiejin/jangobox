@@ -68,7 +68,7 @@
         "fields": {
             "user": 1, 
             "title": "Future Event",
-            "time": "2013-01-31 12:00:00",
+            "time": "2013-09-01T13:20:30+03:00",
             "location": "Beijing"
         }
     },
@@ -78,7 +78,7 @@
         "fields": {
             "user": 1, 
             "title": "Past Event",
-            "time": "2012-08-17 12:00:00",
+            "time": "2011-09-01T13:20:30+03:00",
             "location": "Boston"
         }
     },

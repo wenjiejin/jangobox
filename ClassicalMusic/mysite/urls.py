@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
+from django.conf.urls.static import static
 
 from django.contrib import admin
 admin.autodiscover()
@@ -24,8 +25,7 @@ urlpatterns = patterns("",
     url(r"^notices/", include("notification.urls")),
     url(r"^announcements/", include("announcements.urls")),
     url(r"^music/", include("music.urls")),
-)
-
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.SERVE_MEDIA:
     urlpatterns += patterns("",

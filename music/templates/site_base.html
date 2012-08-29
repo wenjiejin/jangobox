@@ -1,6 +1,5 @@
 {% extends "theme_base.html" %}
 
-{% load metron_tags %}
 {% load i18n %}
 
 {% block extra_head %}
@@ -26,8 +25,6 @@
             <li id="tab_activities"><a href="#">{% trans "Activities" %}</a></li>
     {% if user.is_authenticated %}
         	<li id="tab_repertoire"><a href="{% url repertoire %}">{% trans "Repertoire" %}</a></li>
-            <li id="tab_profile"><a href="{% url profile_detail user.username %}">{% trans "Profile" %}</a></li>
-            <li id="tab_notices"><a href="{% url notification_notices %}">{% trans "Notices" %}{% if notice_unseen_count %} ({{ notice_unseen_count }}){% endif %}</a></li>
     {% endif %}
             {% endspaceless %}</ul>
 {% endblock %}
@@ -68,6 +65,5 @@
 {% endblock %}
 
 {% block extra_body_base %}
-    {% analytics %}
     {% block extra_body %}{% endblock %}
 {% endblock %}

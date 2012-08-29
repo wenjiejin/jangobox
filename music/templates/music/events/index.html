@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Browse Events" %}{% endblock %}
+
+{% block body %}
+    {% if event_list %}
+    <ul>
+    {% for event in event_list %}
+        <li><a href="/music/events/{{ event.id }}/">{{ event.title }}</a></li>
+    {% endfor %}
+    </ul>
+	{% else %}
+	    <p>No events are available.</p>
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Browse Videos" %}{% endblock %}
+
+{% block body %}
+    <div class="row,video_list">
+        <p>Original</p>
+        {% if ori_video_list %}
+        <div class="row">
+	        {% for video in video_list %}
+	         <div class="video">
+	             {{video.embeded|safe}}
+	         </div>
+	        {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="row,video_list">
+        <p>Favorite</p>
+        {% if fav_video_list %}
+        <div class="row">
+	        {% for video in fav_video_list %}
+	            <div class="video">
+	                {{video.embeded|safe}}
+	            </div>
+	        {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}

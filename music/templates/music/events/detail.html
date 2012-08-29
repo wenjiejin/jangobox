@@ -1,0 +1,9 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans event.title %}{% endblock %}
+
+{% block body %}
+    <h1>{{ event.title }}, {{ event.time }}, {{ event.location }}</h1>
+{% endblock %}

@@ -1,7 +1,6 @@
 {% extends "site_base.html" %}
 
 {% load i18n %}
-{% load ifsetting_tag %}
 
 {% block head_title %}{% trans "My Repertoire" %}{% endblock %}
 
@@ -141,16 +140,5 @@
             </p>
         </div>
         </div>
-
-    {% else %}
-        {% url acct_login as login_url %}
-        <p class="what_next">
-            {% ifsetting ACCOUNT_OPEN_SIGNUP %}
-                {% url acct_signup as signup_url %}
-                {% blocktrans %}Start by <a href="{{ signup_url }}">signing up</a> and <a href="{{ login_url }}">logging in</a>.{% endblocktrans %}
-            {% else %}
-                {% blocktrans %}Start by <a href="{{ login_url }}">logging in</a>.{% endblocktrans %}
-            {% endifsetting %}
-        </p>
     {% endif %}
 {% endblock %}
