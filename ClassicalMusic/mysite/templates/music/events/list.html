@@ -1,0 +1,32 @@
+<div>
+	<div class="row" id="video_list">
+	{% for video in video_list %}
+	  <div class="span video">
+	     <!-- <iframe width="210" height="150" src="{{video.embeded}}" 
+	         frameborder="0" allowfullscreen></iframe> -->
+	     {{video.normalizeEmbeded|safe}}
+	  </div>
+	{% endfor %}
+	</div>
+	
+	<div class="video_pagination">
+	    <p><a id="add-video" href="{% url video_add type %}" class="btn">Add Video</a></p>
+	
+	    {% if page_obj.has_next %}
+	    <p><a id="load_more" onclick="loadMoreVideos('{{type}}', {{ page_obj.next_page_number }})" class="btn">Load More</a></p>
+	    {% endif %}
+	    <span class="step-links">
+	        {% if page_obj.has_previous %}
+	            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+	        {% endif %}
+	
+	        <span class="current">
+	            Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+	        </span>
+	
+	        {% if page_obj.has_next %}
+	            <a href="?page={{ page_obj.next_page_number }}">next</a>
+	        {% endif %}
+	    </span>
+	</div>
+</div>

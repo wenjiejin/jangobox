@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
 encoding//mysite/__init__.py=utf-8
+encoding//mysite/fixtures/initial_data.json=UTF-8
 encoding//mysite/settings.py=utf-8

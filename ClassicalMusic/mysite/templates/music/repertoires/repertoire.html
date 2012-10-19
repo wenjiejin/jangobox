@@ -60,86 +60,81 @@
 		</div>
 		
         <div class="row">
-        <div class="span16">
-        <a href="{% url videos %}"><h2>{% trans "My Videos" %}</h2></a>
-        <hr>
-        <p>
-        <ul class="tabs" data-tabs="tabs">
-          <li class="active"><a href="#original">{% trans "Original" %}</a></li>
-          <li class=""><a href="#favorite">{% trans "Favorite" %}</a></li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane active" id="original">
-            {% if ori_video_list %}
-            <div class="row">
-            {% for video in ori_video_list %}
-              <div class="span">
-                 <!-- <iframe width="210" height="150" src="{{video.embeded}}" 
-                     frameborder="0" allowfullscreen></iframe> -->
-                 {{video.normalizeEmbeded|safe}}
-              </div>
-            {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-          <div class="tab-pane" id="favorite">
-            {% if fav_video_list %}
-            <div class="row">
-            {% for video in fav_video_list %}
-              <div class="span">
-                 <!-- <iframe width="210" height="150" src="{{video.embeded}}" 
-                     frameborder="0" allowfullscreen></iframe> -->
-                 {{video.normalizeEmbeded|safe}}
-              </div>
-            {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-          
-        </div>
-        </p>
-        </div>
-        </div>
-        
-        <div class="row">
-        <div class="span16">
-            <a href="{% url events %}"><h2>{% trans "My Events" %}</h2></a>
-            <hr>
-            <p>
-            <ul class="tabs" data-tabs="tabs">
-	          <li class="active"><a href="#upcoming">{% trans "Upcoming" %}</a></li>
-	          <li class=""><a href="#past">{% trans "Past" %}</a></li>
-	        </ul>
-	        <div class="tab-content">
-	          <div class="tab-pane active" id="upcoming">
-	            {% if upcoming_event_list %}
-	            <div class="row">
-	                {% for event in upcoming_event_list %}
-	                    <div class="span4">
-	                       <a href="/music/events/{{event.id}}/"><h3>{{event.title}}</h3></a>
-	                       <p>{{event.time}}</p>
-	                       <p>{{event.location}}</p>
-	                    </div>
-	                {% endfor %}
-	            </div>
-	            {% endif %}
-	          </div>
-	          <div class="tab-pane" id="past">
-	            {% if past_event_list %}
-	            <div class="row">
-	                {% for event in past_event_list %}
-	                    <div class="span4">
-	                       <a href="/music/events/{{event.id}}/"><h3>{{event.title}}</h3></a>
-	                       <p>{{event.time}}</p>
-	                       <p>{{event.location}}</p>
-	                    </div>
-	                {% endfor %}
-	            </div>
-	            {% endif %}
-	          </div>
+	        <div class="span16">
+		        <a href="{% url videos %}"><h2>{% trans "My Videos" %}</h2></a>
+		        <hr>
+		        <ul class="tabs" data-tabs="tabs">
+		          <li class="active"><a href="#original">{% trans "Original" %}</a></li>
+		          <li class=""><a href="#favorite">{% trans "Favorite" %}</a></li>
+		        </ul>
+		        <div class="tab-content">
+		          <div class="tab-pane active" id="original">
+		            {% if ori_video_list %}
+		            <div class="row">
+		            {% for video in ori_video_list %}
+		              <div class="span">
+		                 <!-- <iframe width="210" height="150" src="{{video.embeded}}" 
+		                     frameborder="0" allowfullscreen></iframe> -->
+		                 {{video.normalizeEmbeded|safe}}
+		              </div>
+		            {% endfor %}
+		            </div>
+		            {% endif %}
+		          </div>
+		          <div class="tab-pane" id="favorite">
+		            {% if fav_video_list %}
+		            <div class="row">
+		            {% for video in fav_video_list %}
+		              <div class="span">
+		                 <!-- <iframe width="210" height="150" src="{{video.embeded}}" 
+		                     frameborder="0" allowfullscreen></iframe> -->
+		                 {{video.normalizeEmbeded|safe}}
+		              </div>
+		            {% endfor %}
+		            </div>
+		            {% endif %}
+		          </div>
+		        </div> <!-- End of tabpane -->
 	        </div>
-            </p>
         </div>
+
+        <div class="row">
+	        <div class="span16">
+	            <a href="{% url events %}"><h2>{% trans "My Events" %}</h2></a>
+	            <hr>
+	            <ul class="tabs" data-tabs="tabs">
+		          <li class="active"><a href="#upcoming">{% trans "Upcoming" %}</a></li>
+		          <li class=""><a href="#past">{% trans "Past" %}</a></li>
+		        </ul>
+		        <div class="tab-content">
+		          <div class="tab-pane active" id="upcoming">
+		            {% if upcoming_event_list %}
+		            <div class="row">
+		                {% for event in upcoming_event_list %}
+		                    <div class="span4">
+		                       <a href="/music/events/{{event.id}}/"><h3>{{event.title}}</h3></a>
+		                       <p>{{event.time}}</p>
+		                       <p>{{event.location}}</p>
+		                    </div>
+		                {% endfor %}
+		            </div>
+		            {% endif %}
+		          </div>
+		          <div class="tab-pane" id="past">
+		            {% if past_event_list %}
+		            <div class="row">
+		                {% for event in past_event_list %}
+		                    <div class="span4">
+		                       <a href="/music/events/{{event.id}}/"><h3>{{event.title}}</h3></a>
+		                       <p>{{event.time}}</p>
+		                       <p>{{event.location}}</p>
+		                    </div>
+		                {% endfor %}
+		            </div>
+		            {% endif %}
+		          </div>
+		        </div> <!-- End of TabContent -->
+	        </div>
         </div>
 
     {% else %}

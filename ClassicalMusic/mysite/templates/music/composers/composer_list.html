@@ -1,0 +1,31 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Browse Composers" %}{% endblock %}
+
+{% block body %}
+    <div class="pagination">
+    <ul>
+    {% for letter in alphabet %}
+        {% if letter == startswith %}
+                <li class="active"><a href="/music/composers/{{ letter }}">{{letter}}</a></li>
+        {% else %}
+                <li><a href="/music/composers/{{ letter }}">{{letter}}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+    </div>
+    {% if composer_list %}
+        <div class="row">
+        {% for composer in composer_list %}
+            <div class="span8">
+            <a href="/music/composers/{{ composer.id }}/">{{ composer.last_name }}, {{ composer.first_name }}</a>
+            </div>
+        {% endfor %}
+        </div>
+    {% else %}
+        <p>No composers are available.</p>
+    {% endif %}
+{% endblock %}

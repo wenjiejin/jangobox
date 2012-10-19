@@ -1,0 +1,79 @@
+{% load bootstrap_tags %}
+{% load i18n %}
+<link href="{{ STATIC_URL }}css/smoothness/jquery-ui-1.8.24.custom.css" rel="stylesheet" type="text/css"/>
+<script src="{{ STATIC_URL }}js/jquery-ui-1.8.24.custom.min.js"></script>
+
+<div class="modal-header">
+    <h3>{% trans "Add Event" %}</h3>
+    <a href="#" class="close modal-close">&times;</a>
+</div>
+
+<form class="ajax" method="POST" action="{% url event_add %}">
+    {% csrf_token %}
+    
+    <div class="modal-body">
+        <!-- <fieldset>
+            {{ form|as_bootstrap }}
+        </fieldset> -->
+
+        <fieldset>
+        {% if form.non_field_errors %}
+		    <div class="alert-message block-message error">
+		        <p>
+		            <strong>{{ form_error_title }}</strong>
+		            <ul>
+		                {{ form.non_field_errors|unordered_list }}
+		            </ul>
+		        </p>
+		    </div>
+		{% endif %}
+		{% for field in form %}
+		    {% if field.is_hidden %}
+		        {{ field }}
+		    {% else %}
+			    {% if field.label == 'time' %}
+	                <div class="clearfix{% if field.errors %} error{% endif %}">
+                        {{ field }}
+
+	                    {% for error in field.errors %}
+	                        <span class="help-block-inline">{{ error }}</span>
+	                    {% endfor %}
+	                    {% if field.help_text %}
+	                        <span class="help-block">{{ field.help_text|safe }}</span>
+	                    {% endif %}
+                    </div>
+	            {% else %}
+			        <div class="clearfix{% if field.errors %} error{% endif %}">
+			            {% if field.label %}
+			                <label for="{{ field.auto_id }}" {% if field.field.required %}class="requiredField"{% endif %}>
+			                    {{ field.label|safe }}
+			                </label>
+			                <div class="input">
+			                    {{ field }}
+			                    {% for error in field.errors %}
+			                        <span class="help-block-inline">{{ error }}</span>
+			                    {% endfor %}
+			                    {% if field.help_text %}
+			                        <span class="help-block">{{ field.help_text|safe }}</span>
+			                    {% endif %}
+			                </div>
+			            {% endif %}
+			        </div>
+		        {% endif %}
+		    {% endif %}
+		{% endfor %}
+		</fieldset>
+
+    </div>
+    
+    <div class="modal-footer">
+        <button type="submit" class="btn primary">Create</button>
+        <a href="#" class="btn modal-close">Cancel</a>
+    </div>
+</form>
+
+<script>
+    $(function() {
+        $(".datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+    });
+</script>

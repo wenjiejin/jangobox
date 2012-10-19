@@ -7,25 +7,59 @@
 
 {% block body %}
     <div class="pagination">
-    <ul>
-    {% for letter in alphabet %}
-        {% if letter == startswith %}
-                <li class="active"><a href="/music/composers/{{ letter }}">{{letter}}</a></li>
-        {% else %}
-                <li><a href="/music/composers/{{ letter }}">{{letter}}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
-    </div>
-	{% if composer_list %}
-	    <div class="row">
-	    {% for composer in composer_list %}
-	        <div class="span8">
-	        <a href="/music/composers/{{ composer.id }}/">{{ composer.last_name }}, {{ composer.first_name }}</a>
-	        </div>
+	    <ul>
+	    {% for letter in alphabet %}
+	        {% if letter == startswith %}
+	                <li class="active"><a href="/music/composers/?start={{ letter }}">{{letter}}</a></li>
+	        {% else %}
+	                <li><a href="/music/composers/?start={{ letter }}">{{letter}}</a></li>
+	        {% endif %}
 	    {% endfor %}
-	    </div>
-	{% else %}
-	    <p>No composers are available.</p>
-	{% endif %}
+	    </ul>
+    </div>
+    <div class="row">
+    {% for composer in composer_list %}
+       {% if forloop.counter == 1 or forloop.counter == 26 %}
+       <div class="span8">
+       <ul>
+       {% endif %}
+       <li>
+           <a href="/music/composers/{{ composer.id }}/">{{ composer.last_name }}, {{ composer.first_name }}</a>
+       </li>
+       {% if forloop.counter == 25 or forloop.counter == composer_list|length %}
+       </ul>
+       </div>
+       {% endif %}
+    {% empty %}
+           <p>No composers are available.</p>
+    {% endfor %}
+    </div>
+    <div>
+	    <span class="step-links">
+	        {% if page_obj.has_previous %}
+	            <a href="?page={{ page_obj.previous_page_number }}&start={{startswith}}">previous</a>
+	        {% endif %}
+	
+	        <span class="current">
+	            Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+	        </span>
+	
+	        {% if page_obj.has_next %}
+	            <a href="?page={{ page_obj.next_page_number }}&start={{startswith}}">next</a>
+	        {% endif %}
+	    </span>
+	</div>
+
+    <p><a id="add-composer" href="{% url composer_add %}" class="btn">Add Composer</a></p>
+	
+{% endblock %}
+
+{% block extra_body %}
+    <script>
+        $(function() {
+            $("#add-composer").modal({
+                backdrop: true
+            });
+        });
+    </script>
 {% endblock %}

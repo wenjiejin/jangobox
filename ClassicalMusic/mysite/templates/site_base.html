@@ -4,7 +4,6 @@
 {% load i18n %}
 
 {% block extra_head %}
-    <link href="{{ STATIC_URL }}css/mysite.css" rel="stylesheet" type="text/css"/>
 
     <!-- <link href="{{ STATIC_URL }}css/jquery-ui.css" rel="stylesheet" type="text/css"/>
     <link href="{{ STATIC_URL }}css/jScrollPane.css" rel="stylesheet" type="text/css" media="all" />
@@ -17,6 +16,11 @@
 		  $('.scroll-pane').jScrollPane();
 	  });
     </script> -->
+
+    <link href="{{ STATIC_URL }}css/mysite.css" rel="stylesheet" type="text/css"/>
+
+    <!-- <link href="{{ STATIC_URL }}css/smoothness/jquery-ui-1.8.24.custom.css" rel="stylesheet" type="text/css"/>
+    <script src="{{ STATIC_URL }}js/jquery-ui-1.8.24.custom.min.js"></script> -->
 
 {% endblock %}
 

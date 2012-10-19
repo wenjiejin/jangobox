@@ -1,0 +1,13 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Browse Composers" %}{% endblock %}
+
+{% block body %}
+<form action="/music/videos/add" method="post">{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="Submit" />
+</form>
+{% endblock %}

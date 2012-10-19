@@ -1,0 +1,22 @@
+{% load bootstrap_tags %}
+{% load i18n %}
+
+<div class="modal-header">
+    <h3>{% trans "Add Video" %}</h3>
+    <a href="#" class="close modal-close">&times;</a>
+</div>
+
+<form class="ajax" method="POST" action="{% url video_add type %}">
+    {% csrf_token %}
+    
+    <div class="modal-body">
+        <fieldset>
+            {{ form|as_bootstrap }}
+        </fieldset>
+    </div>
+    
+    <div class="modal-footer">
+        <button type="submit" class="btn primary">Create</button>
+        <a href="#" class="btn modal-close">Cancel</a>
+    </div>
+</form>

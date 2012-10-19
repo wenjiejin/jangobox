@@ -13,7 +13,8 @@
         "fields": {
             "first_name": "Wolfgang Amadeus", 
             "last_name": "Mozart",
-            "picture": "composer/mozart.jpg"
+            "picture": "composer/mozart.jpg",
+            "description" : "Wolfgang Amadeus Mozart (German: [ˈvɔlfɡaŋ amaˈdeus ˈmoːtsaʁt], English see fn.),[1] baptismal name Johannes Chrysostomus Wolfgangus Theophilus Mozart[2] (27 January 1756 – 5 December 1791), was a prolific and influential composer of the Classical era.  Mozart showed prodigious ability from his earliest childhood. Already competent on keyboard and violin, he composed from the age of five and performed before European royalty. At 17, he was engaged as a court musician in Salzburg, but grew restless and travelled in search of a better position, always composing abundantly. While visiting Vienna in 1781, he was dismissed from his Salzburg position. He chose to stay in the capital, where he achieved fame but little financial security. During his final years in Vienna, he composed many of his best-known symphonies, concertos, and operas, and portions of the Requiem, which was largely unfinished at the time of his death. The circumstances of his early death have been much mythologized. He was survived by his wife Constanze and two sons. Mozart learned voraciously from others, and developed a brilliance and maturity of style that encompassed the light and graceful along with the dark and passionate. He composed over 600 works, many acknowledged as pinnacles of symphonic, concertante, chamber, operatic, and choral music. He is among the most enduringly popular of classical composers, and his influence on subsequent Western art music is profound; Beethoven composed his own early works in the shadow of Mozart, and Joseph Haydn wrote that posterity will not see such a talent again in 100 years."
         }
     },
     {
@@ -109,7 +110,114 @@
             "original": true
         }
     },
-    
+    {
+        "pk": 4, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/sY3QktRielY\" frameborder=\"0\" allowfullscreen></iframe>",
+            "original": true
+        }
+    },
+    {
+        "pk": 5, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/0Ppy66_0u7s\" frameborder=\"0\" allowfullscreen></iframe>",
+            "favorite": true
+        }
+    },
+    {
+        "pk": 6, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<embed src=\"http://www.tudou.com/l/XOEIhCVgb1I/&resourceId=0_05_05_99&iid=143950783&bid=05/v.swf\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" wmode=\"opaque\" width=\"210\" height=\"150\"></embed>",
+            "original": true
+        }
+    },
+    {
+        "pk": 7, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/sY3QktRielY\" frameborder=\"0\" allowfullscreen></iframe>",
+            "original": true
+        }
+    },
+    {
+        "pk": 8, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/0Ppy66_0u7s\" frameborder=\"0\" allowfullscreen></iframe>",
+            "favorite": true
+        }
+    },
+    {
+        "pk": 9, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<embed src=\"http://www.tudou.com/l/XOEIhCVgb1I/&resourceId=0_05_05_99&iid=143950783&bid=05/v.swf\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" wmode=\"opaque\" width=\"210\" height=\"150\"></embed>",
+            "original": true
+        }
+    },
+    {
+        "pk": 10, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/sY3QktRielY\" frameborder=\"0\" allowfullscreen></iframe>",
+            "original": true
+        }
+    },
+    {
+        "pk": 11, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/0Ppy66_0u7s\" frameborder=\"0\" allowfullscreen></iframe>",
+            "favorite": true
+        }
+    },
+    {
+        "pk": 12, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<embed src=\"http://www.tudou.com/l/XOEIhCVgb1I/&resourceId=0_05_05_99&iid=143950783&bid=05/v.swf\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" wmode=\"opaque\" width=\"210\" height=\"150\"></embed>",
+            "original": true
+        }
+    },
+    {
+        "pk": 13, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/sY3QktRielY\" frameborder=\"0\" allowfullscreen></iframe>",
+            "original": true
+        }
+    },
+    {
+        "pk": 14, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<iframe width=\"210\" height=\"150\" src=\"http://www.youtube.com/embed/0Ppy66_0u7s\" frameborder=\"0\" allowfullscreen></iframe>",
+            "favorite": true
+        }
+    },
+    {
+        "pk": 15, 
+        "model": "music.video", 
+        "fields": {
+            "user": 1, 
+            "embeded": "<embed src=\"http://www.tudou.com/l/XOEIhCVgb1I/&resourceId=0_05_05_99&iid=143950783&bid=05/v.swf\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" wmode=\"opaque\" width=\"210\" height=\"150\"></embed>",
+            "original": true
+        }
+    },
     {
         "pk": 3,
         "model": "music.composer",
@@ -498,7 +606,7 @@
         "pk": 51,
         "model": "music.composer",
         "fields": {
-            "first_name": "Tom�s",
+            "first_name": "Tomï¿½s",
             "last_name": "Adiego Navarro"
         }
     },
@@ -595,14 +703,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Carolus",
-            "last_name": "Aggh�zy"
+            "last_name": "Agghï¿½zy"
         }
     },
     {
         "pk": 64,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois d'",
+            "first_name": "Franï¿½ois d'",
             "last_name": "Agincour"
         }
     },
@@ -706,7 +814,7 @@
         "pk": 77,
         "model": "music.composer",
         "fields": {
-            "first_name": "Sebasti�n",
+            "first_name": "Sebastiï¿½n",
             "last_name": "Aguilera de Heredia"
         }
     },
@@ -747,7 +855,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johan Alfred",
-            "last_name": "Ahlstr�m"
+            "last_name": "Ahlstrï¿½m"
         }
     },
     {
@@ -755,7 +863,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Olof",
-            "last_name": "�hlstr�m"
+            "last_name": "ï¿½hlstrï¿½m"
         }
     },
     {
@@ -779,7 +887,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hamilton",
-            "last_name": "Aid�"
+            "last_name": "Aidï¿½"
         }
     },
     {
@@ -802,7 +910,7 @@
         "pk": 89,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�opold",
+            "first_name": "Lï¿½opold",
             "last_name": "Aimon"
         }
     },
@@ -971,15 +1079,15 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Isaac",
-            "last_name": "Alb�niz"
+            "last_name": "Albï¿½niz"
         }
     },
     {
         "pk": 111,
         "model": "music.composer",
         "fields": {
-            "first_name": "Mateo Antonio P�rez de",
-            "last_name": "Alb�niz"
+            "first_name": "Mateo Antonio Pï¿½rez de",
+            "last_name": "Albï¿½niz"
         }
     },
     {
@@ -1210,7 +1318,7 @@
         "pk": 140,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Alday"
         }
     },
@@ -1339,7 +1447,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hugo",
-            "last_name": "Alfv�n"
+            "last_name": "Alfvï¿½n"
         }
     },
     {
@@ -1355,14 +1463,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Francisco",
-            "last_name": "Ali�"
+            "last_name": "Aliï¿½"
         }
     },
     {
         "pk": 159,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jer�nimo de",
+            "first_name": "Jerï¿½nimo de",
             "last_name": "Aliseda"
         }
     },
@@ -1386,7 +1494,7 @@
         "pk": 162,
         "model": "music.composer",
         "fields": {
-            "first_name": "Napol�on",
+            "first_name": "Napolï¿½on",
             "last_name": "Alkan"
         }
     },
@@ -1394,7 +1502,7 @@
         "pk": 163,
         "model": "music.composer",
         "fields": {
-            "first_name": "G�za",
+            "first_name": "Gï¿½za",
             "last_name": "Allaga"
         }
     },
@@ -1483,7 +1591,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Carl",
-            "last_name": "Almenr�der"
+            "last_name": "Almenrï¿½der"
         }
     },
     {
@@ -1491,7 +1599,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Eyvind",
-            "last_name": "Aln�s"
+            "last_name": "Alnï¿½s"
         }
     },
     {
@@ -1562,8 +1670,8 @@
         "pk": 184,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ernest Eug�ne",
-            "last_name": "Alt�s"
+            "first_name": "Ernest Eugï¿½ne",
+            "last_name": "Altï¿½s"
         }
     },
     {
@@ -1587,14 +1695,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Carlos",
-            "last_name": "�lvarez"
+            "last_name": "ï¿½lvarez"
         }
     },
     {
         "pk": 188,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fermin Mar�a",
+            "first_name": "Fermin Marï¿½a",
             "last_name": "Alvarez"
         }
     },
@@ -1634,7 +1742,7 @@
         "pk": 193,
         "model": "music.composer",
         "fields": {
-            "first_name": "Vincent Alo�se",
+            "first_name": "Vincent Aloï¿½se",
             "last_name": "Amann"
         }
     },
@@ -1794,7 +1902,7 @@
         "pk": 213,
         "model": "music.composer",
         "fields": {
-            "first_name": "Louis Marie Fran�ois",
+            "first_name": "Louis Marie Franï¿½ois",
             "last_name": "Andlauer"
         }
     },
@@ -1803,7 +1911,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johann",
-            "last_name": "Andr�"
+            "last_name": "Andrï¿½"
         }
     },
     {
@@ -1811,15 +1919,15 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johann Anton",
-            "last_name": "Andr�"
+            "last_name": "Andrï¿½"
         }
     },
     {
         "pk": 216,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
-            "last_name": "Andr�"
+            "first_name": "Josï¿½",
+            "last_name": "Andrï¿½"
         }
     },
     {
@@ -1827,7 +1935,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Julius",
-            "last_name": "Andr�"
+            "last_name": "Andrï¿½"
         }
     },
     {
@@ -1835,7 +1943,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ludwig",
-            "last_name": "Andr�"
+            "last_name": "Andrï¿½"
         }
     },
     {
@@ -1867,7 +1975,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Elfrida",
-            "last_name": "Andr�e"
+            "last_name": "Andrï¿½e"
         }
     },
     {
@@ -1963,7 +2071,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jacques-Albert",
-            "last_name": "Ansch�tz"
+            "last_name": "Anschï¿½tz"
         }
     },
     {
@@ -2018,7 +2126,7 @@
         "pk": 241,
         "model": "music.composer",
         "fields": {
-            "first_name": "Xo�n",
+            "first_name": "Xoï¿½n",
             "last_name": "Antelo"
         }
     },
@@ -2274,8 +2382,8 @@
         "pk": 273,
         "model": "music.composer",
         "fields": {
-            "first_name": "Enrique Fern�ndez",
-            "last_name": "Arb�s"
+            "first_name": "Enrique Fernï¿½ndez",
+            "last_name": "Arbï¿½s"
         }
     },
     {
@@ -2290,7 +2398,7 @@
         "pk": 275,
         "model": "music.composer",
         "fields": {
-            "first_name": "Juli�n",
+            "first_name": "Juliï¿½n",
             "last_name": "Arcas"
         }
     },
@@ -2298,7 +2406,7 @@
         "pk": 276,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne",
+            "first_name": "Eugï¿½ne",
             "last_name": "Archainbaud"
         }
     },
@@ -2330,8 +2438,8 @@
         "pk": 280,
         "model": "music.composer",
         "fields": {
-            "first_name": "Miguel Ram�n",
-            "last_name": "Arena Rodr�guez"
+            "first_name": "Miguel Ramï¿½n",
+            "last_name": "Arena Rodrï¿½guez"
         }
     },
     {
@@ -2522,7 +2630,7 @@
         "pk": 304,
         "model": "music.composer",
         "fields": {
-            "first_name": "Juan Cris�stomo de",
+            "first_name": "Juan Crisï¿½stomo de",
             "last_name": "Arriaga"
         }
     },
@@ -2579,7 +2687,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Alexandre Joseph",
-            "last_name": "Art�t"
+            "last_name": "Artï¿½t"
         }
     },
     {
@@ -2770,7 +2878,7 @@
         "pk": 335,
         "model": "music.composer",
         "fields": {
-            "first_name": "Daniel Fran�ois Esprit",
+            "first_name": "Daniel Franï¿½ois Esprit",
             "last_name": "Auber"
         }
     },
@@ -2794,7 +2902,7 @@
         "pk": 338,
         "model": "music.composer",
         "fields": {
-            "first_name": "Pierre Fran�ois Olivier",
+            "first_name": "Pierre Franï¿½ois Olivier",
             "last_name": "Aubert"
         }
     },
@@ -2803,7 +2911,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Prudent Louis",
-            "last_name": "Aub�ry du Boulley"
+            "last_name": "Aubï¿½ry du Boulley"
         }
     },
     {
@@ -2883,7 +2991,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Lucien/Librettist",
-            "last_name": "Aug� de Lassus"
+            "last_name": "Augï¿½ de Lassus"
         }
     },
     {
@@ -2986,7 +3094,7 @@
         "pk": 362,
         "model": "music.composer",
         "fields": {
-            "first_name": "Pedro Ant�nio",
+            "first_name": "Pedro Antï¿½nio",
             "last_name": "Avondano"
         }
     },
@@ -3227,7 +3335,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Agathe",
-            "last_name": "Backer-Gr�ndahl"
+            "last_name": "Backer-Grï¿½ndahl"
         }
     },
     {
@@ -3474,7 +3582,7 @@
         "pk": 423,
         "model": "music.composer",
         "fields": {
-            "first_name": "B�lint",
+            "first_name": "Bï¿½lint",
             "last_name": "Bakfark"
         }
     },
@@ -3498,7 +3606,7 @@
         "pk": 426,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
+            "first_name": "Josï¿½",
             "last_name": "Balart"
         }
     },
@@ -3514,7 +3622,7 @@
         "pk": 428,
         "model": "music.composer",
         "fields": {
-            "first_name": "Claude-B�nigne",
+            "first_name": "Claude-Bï¿½nigne",
             "last_name": "Balbastre"
         }
     },
@@ -3675,7 +3783,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Antoine",
-            "last_name": "Ban�s"
+            "last_name": "Banï¿½s"
         }
     },
     {
@@ -3851,7 +3959,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Manuel",
-            "last_name": "B�renz"
+            "last_name": "Bï¿½renz"
         }
     },
     {
@@ -3875,7 +3983,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Augustin",
-            "last_name": "Bari�"
+            "last_name": "Bariï¿½"
         }
     },
     {
@@ -4035,7 +4143,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Georges",
-            "last_name": "Barr�re"
+            "last_name": "Barrï¿½re"
         }
     },
     {
@@ -4075,15 +4183,15 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jean-Baptiste",
-            "last_name": "Barri�re"
+            "last_name": "Barriï¿½re"
         }
     },
     {
         "pk": 499,
         "model": "music.composer",
         "fields": {
-            "first_name": "Agust�n",
-            "last_name": "Barrios Mangor�"
+            "first_name": "Agustï¿½n",
+            "last_name": "Barrios Mangorï¿½"
         }
     },
     {
@@ -4122,7 +4230,7 @@
         "pk": 504,
         "model": "music.composer",
         "fields": {
-            "first_name": "Istv�n",
+            "first_name": "Istvï¿½n",
             "last_name": "Bartalus"
         }
     },
@@ -4170,8 +4278,8 @@
         "pk": 510,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois-Hippolyte",
-            "last_name": "Barth�l�mon"
+            "first_name": "Franï¿½ois-Hippolyte",
+            "last_name": "Barthï¿½lï¿½mon"
         }
     },
     {
@@ -4210,8 +4318,8 @@
         "pk": 515,
         "model": "music.composer",
         "fields": {
-            "first_name": "B�la",
-            "last_name": "Bart�k"
+            "first_name": "Bï¿½la",
+            "last_name": "Bartï¿½k"
         }
     },
     {
@@ -4395,7 +4503,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Charles",
-            "last_name": "B�ton"
+            "last_name": "Bï¿½ton"
         }
     },
     {
@@ -4403,7 +4511,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Henri",
-            "last_name": "B�ton"
+            "last_name": "Bï¿½ton"
         }
     },
     {
@@ -4426,7 +4534,7 @@
         "pk": 542,
         "model": "music.composer",
         "fields": {
-            "first_name": "F�lix",
+            "first_name": "Fï¿½lix",
             "last_name": "Battanchon"
         }
     },
@@ -4587,7 +4695,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johann Baptist",
-            "last_name": "Baumg�rtner"
+            "last_name": "Baumgï¿½rtner"
         }
     },
     {
@@ -4682,7 +4790,7 @@
         "pk": 574,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Bazin"
         }
     },
@@ -4850,7 +4958,7 @@
         "pk": 595,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren� Louis",
+            "first_name": "Renï¿½ Louis",
             "last_name": "Becker"
         }
     },
@@ -4891,7 +4999,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jean-Baptiste",
-            "last_name": "B�dard"
+            "last_name": "Bï¿½dard"
         }
     },
     {
@@ -4963,7 +5071,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Joseph",
-            "last_name": "B�esau"
+            "last_name": "Bï¿½esau"
         }
     },
     {
@@ -5002,8 +5110,8 @@
         "pk": 614,
         "model": "music.composer",
         "fields": {
-            "first_name": "Tam�s",
-            "last_name": "Beischer-Maty�"
+            "first_name": "Tamï¿½s",
+            "last_name": "Beischer-Matyï¿½"
         }
     },
     {
@@ -5043,7 +5151,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gaston",
-            "last_name": "B�lier"
+            "last_name": "Bï¿½lier"
         }
     },
     {
@@ -5090,7 +5198,7 @@
         "pk": 625,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�n Levoslav",
+            "first_name": "Jï¿½n Levoslav",
             "last_name": "Bella"
         }
     },
@@ -5274,7 +5382,7 @@
         "pk": 648,
         "model": "music.composer",
         "fields": {
-            "first_name": "Josse-Fran�ois-Joseph",
+            "first_name": "Josse-Franï¿½ois-Joseph",
             "last_name": "Benaut"
         }
     },
@@ -5458,7 +5566,7 @@
         "pk": 671,
         "model": "music.composer",
         "fields": {
-            "first_name": "Cosme Jos� de",
+            "first_name": "Cosme Josï¿½ de",
             "last_name": "Benito"
         }
     },
@@ -5514,7 +5622,7 @@
         "pk": 678,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�",
+            "first_name": "Andrï¿½",
             "last_name": "Benoist"
         }
     },
@@ -5531,14 +5639,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Peter",
-            "last_name": "Beno�t"
+            "last_name": "Benoï¿½t"
         }
     },
     {
         "pk": 681,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
+            "first_name": "Frï¿½dï¿½ric",
             "last_name": "Bentayoux"
         }
     },
@@ -5554,7 +5662,7 @@
         "pk": 683,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�rgen",
+            "first_name": "Jï¿½rgen",
             "last_name": "Bentzon"
         }
     },
@@ -5563,7 +5671,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Alexandre",
-            "last_name": "B�on"
+            "last_name": "Bï¿½on"
         }
     },
     {
@@ -5578,8 +5686,8 @@
         "pk": 686,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
-            "last_name": "B�rat"
+            "first_name": "Frï¿½dï¿½ric",
+            "last_name": "Bï¿½rat"
         }
     },
     {
@@ -5602,7 +5710,7 @@
         "pk": 689,
         "model": "music.composer",
         "fields": {
-            "first_name": "Mih�ly",
+            "first_name": "Mihï¿½ly",
             "last_name": "Berecz"
         }
     },
@@ -5627,7 +5735,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Henri",
-            "last_name": "Ber�ny"
+            "last_name": "Berï¿½ny"
         }
     },
     {
@@ -5642,8 +5750,8 @@
         "pk": 694,
         "model": "music.composer",
         "fields": {
-            "first_name": "Amed�o",
-            "last_name": "B�r�zet"
+            "first_name": "Amedï¿½o",
+            "last_name": "Bï¿½rï¿½zet"
         }
     },
     {
@@ -5714,8 +5822,8 @@
         "pk": 703,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ir�n�e",
-            "last_name": "Berg�"
+            "first_name": "Irï¿½nï¿½e",
+            "last_name": "Bergï¿½"
         }
     },
     {
@@ -5835,7 +5943,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Charles-Auguste de",
-            "last_name": "B�riot"
+            "last_name": "Bï¿½riot"
         }
     },
     {
@@ -5843,7 +5951,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Charles-Wilfrid",
-            "last_name": "B�riot"
+            "last_name": "Bï¿½riot"
         }
     },
     {
@@ -5922,7 +6030,7 @@
         "pk": 729,
         "model": "music.composer",
         "fields": {
-            "first_name": "�mile",
+            "first_name": "ï¿½mile",
             "last_name": "Bernard"
         }
     },
@@ -6018,7 +6126,7 @@
         "pk": 741,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
+            "first_name": "Josï¿½",
             "last_name": "Berr"
         }
     },
@@ -6059,7 +6167,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Heinrich",
-            "last_name": "Bert�"
+            "last_name": "Bertï¿½"
         }
     },
     {
@@ -6226,7 +6334,7 @@
         "pk": 767,
         "model": "music.composer",
         "fields": {
-            "first_name": "Louis-D�sir�",
+            "first_name": "Louis-Dï¿½sirï¿½",
             "last_name": "Besozzi"
         }
     },
@@ -6259,7 +6367,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Otto",
-            "last_name": "Best�ndig"
+            "last_name": "Bestï¿½ndig"
         }
     },
     {
@@ -6379,7 +6487,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Giovanni Pietro",
-            "last_name": "Biandr�"
+            "last_name": "Biandrï¿½"
         }
     },
     {
@@ -6498,7 +6606,7 @@
         "pk": 801,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�nos",
+            "first_name": "Jï¿½nos",
             "last_name": "Bihari"
         }
     },
@@ -6586,7 +6694,7 @@
         "pk": 812,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric-Augustin",
+            "first_name": "Frï¿½dï¿½ric-Augustin",
             "last_name": "Binet"
         }
     },
@@ -6890,7 +6998,7 @@
         "pk": 850,
         "model": "music.composer",
         "fields": {
-            "first_name": "Th�r�se",
+            "first_name": "Thï¿½rï¿½se",
             "last_name": "Blangini"
         }
     },
@@ -6930,7 +7038,7 @@
         "pk": 855,
         "model": "music.composer",
         "fields": {
-            "first_name": "Franz Thadd�us",
+            "first_name": "Franz Thaddï¿½us",
             "last_name": "Blatt"
         }
     },
@@ -7010,7 +7118,7 @@
         "pk": 865,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren� Louis",
+            "first_name": "Renï¿½ Louis",
             "last_name": "Blin"
         }
     },
@@ -7050,7 +7158,7 @@
         "pk": 870,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�",
+            "first_name": "Andrï¿½",
             "last_name": "Bloch"
         }
     },
@@ -7066,7 +7174,7 @@
         "pk": 872,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�zsef",
+            "first_name": "Jï¿½zsef",
             "last_name": "Bloch"
         }
     },
@@ -7251,7 +7359,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Robert Emile",
-            "last_name": "Bockm�hl"
+            "last_name": "Bockmï¿½hl"
         }
     },
     {
@@ -7259,7 +7367,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Philipp Friedrich",
-            "last_name": "B�ddecker"
+            "last_name": "Bï¿½ddecker"
         }
     },
     {
@@ -7275,7 +7383,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Louis",
-            "last_name": "B�decker"
+            "last_name": "Bï¿½decker"
         }
     },
     {
@@ -7346,16 +7454,16 @@
         "pk": 907,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�on",
-            "last_name": "Bo�llmann"
+            "first_name": "Lï¿½on",
+            "last_name": "Boï¿½llmann"
         }
     },
     {
         "pk": 908,
         "model": "music.composer",
         "fields": {
-            "first_name": "Alexandre-Pierre-Fran�ois",
-            "last_name": "Bo�ly"
+            "first_name": "Alexandre-Pierre-Franï¿½ois",
+            "last_name": "Boï¿½ly"
         }
     },
     {
@@ -7371,7 +7479,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Antoine de",
-            "last_name": "Bo�sset"
+            "last_name": "Boï¿½sset"
         }
     },
     {
@@ -7379,7 +7487,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Anicius Manlius Severinus",
-            "last_name": "Bo�thius"
+            "last_name": "Boï¿½thius"
         }
     },
     {
@@ -7419,7 +7527,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Carl Leopold",
-            "last_name": "B�hm"
+            "last_name": "Bï¿½hm"
         }
     },
     {
@@ -7427,7 +7535,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Georg",
-            "last_name": "B�hm"
+            "last_name": "Bï¿½hm"
         }
     },
     {
@@ -7435,7 +7543,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gottfried",
-            "last_name": "B�hm"
+            "last_name": "Bï¿½hm"
         }
     },
     {
@@ -7443,7 +7551,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Oskar",
-            "last_name": "B�hme"
+            "last_name": "Bï¿½hme"
         }
     },
     {
@@ -7451,7 +7559,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johann Ludwig",
-            "last_name": "B�hner"
+            "last_name": "Bï¿½hner"
         }
     },
     {
@@ -7482,7 +7590,7 @@
         "pk": 924,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois Adrien",
+            "first_name": "Franï¿½ois Adrien",
             "last_name": "Boieldieu"
         }
     },
@@ -7491,14 +7599,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Carl Oscar",
-            "last_name": "Boije af Genn�s"
+            "last_name": "Boije af Gennï¿½s"
         }
     },
     {
         "pk": 926,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren� de",
+            "first_name": "Renï¿½ de",
             "last_name": "Boisdeffre"
         }
     },
@@ -7563,7 +7671,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johannes Eduard Franz",
-            "last_name": "B�lsche"
+            "last_name": "Bï¿½lsche"
         }
     },
     {
@@ -7571,7 +7679,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Armand",
-            "last_name": "Bols�ne"
+            "last_name": "Bolsï¿½ne"
         }
     },
     {
@@ -7594,7 +7702,7 @@
         "pk": 938,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jo�o Domingos",
+            "first_name": "Joï¿½o Domingos",
             "last_name": "Bomtempo"
         }
     },
@@ -7650,7 +7758,7 @@
         "pk": 945,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�rgen Ditleff",
+            "first_name": "Jï¿½rgen Ditleff",
             "last_name": "Bondesen"
         }
     },
@@ -7795,7 +7903,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Luigi",
-            "last_name": "Bord�se"
+            "last_name": "Bordï¿½se"
         }
     },
     {
@@ -7835,7 +7943,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hjalmar",
-            "last_name": "Borgstr�m"
+            "last_name": "Borgstrï¿½m"
         }
     },
     {
@@ -7843,7 +7951,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Anders Samuel",
-            "last_name": "B�rjesson"
+            "last_name": "Bï¿½rjesson"
         }
     },
     {
@@ -7899,14 +8007,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hakon",
-            "last_name": "B�rresen"
+            "last_name": "Bï¿½rresen"
         }
     },
     {
         "pk": 977,
         "model": "music.composer",
         "fields": {
-            "first_name": "Mos� Isidori",
+            "first_name": "Mosï¿½ Isidori",
             "last_name": "Borsani"
         }
     },
@@ -7931,7 +8039,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Miska",
-            "last_name": "Borz�"
+            "last_name": "Borzï¿½"
         }
     },
     {
@@ -7962,7 +8070,7 @@
         "pk": 984,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
+            "first_name": "Frï¿½dï¿½ric",
             "last_name": "Boscovitz"
         }
     },
@@ -7978,7 +8086,7 @@
         "pk": 986,
         "model": "music.composer",
         "fields": {
-            "first_name": "Henri�tte",
+            "first_name": "Henriï¿½tte",
             "last_name": "Bosmans"
         }
     },
@@ -7986,7 +8094,7 @@
         "pk": 987,
         "model": "music.composer",
         "fields": {
-            "first_name": "Charles-Marie-Fran�ois",
+            "first_name": "Charles-Marie-Franï¿½ois",
             "last_name": "Bosselet"
         }
     },
@@ -8018,7 +8126,7 @@
         "pk": 991,
         "model": "music.composer",
         "fields": {
-            "first_name": "Th�odore",
+            "first_name": "Thï¿½odore",
             "last_name": "Botrel"
         }
     },
@@ -8067,7 +8175,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ernst",
-            "last_name": "B�ttcher"
+            "last_name": "Bï¿½ttcher"
         }
     },
     {
@@ -8083,7 +8191,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Martin",
-            "last_name": "B�ttger"
+            "last_name": "Bï¿½ttger"
         }
     },
     {
@@ -8186,7 +8294,7 @@
         "pk": 1012,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne",
+            "first_name": "Eugï¿½ne",
             "last_name": "Bourdeau"
         }
     },
@@ -8202,7 +8310,7 @@
         "pk": 1014,
         "model": "music.composer",
         "fields": {
-            "first_name": "�mile",
+            "first_name": "ï¿½mile",
             "last_name": "Bourgeois"
         }
     },
@@ -8226,7 +8334,7 @@
         "pk": 1017,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Bourguignon"
         }
     },
@@ -8282,7 +8390,7 @@
         "pk": 1024,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren� de",
+            "first_name": "Renï¿½ de",
             "last_name": "Bousset"
         }
     },
@@ -8290,7 +8398,7 @@
         "pk": 1025,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Bouvard"
         }
     },
@@ -8610,7 +8718,7 @@
         "pk": 1065,
         "model": "music.composer",
         "fields": {
-            "first_name": "Henri Fran�ois Robert",
+            "first_name": "Henri Franï¿½ois Robert",
             "last_name": "Brandts Buys"
         }
     },
@@ -8675,7 +8783,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ulrich",
-            "last_name": "Br�tel"
+            "last_name": "Brï¿½tel"
         }
     },
     {
@@ -8834,8 +8942,8 @@
         "pk": 1093,
         "model": "music.composer",
         "fields": {
-            "first_name": "Tom�s",
-            "last_name": "Bret�n"
+            "first_name": "Tomï¿½s",
+            "last_name": "Bretï¿½n"
         }
     },
     {
@@ -8851,7 +8959,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jean-Baptiste",
-            "last_name": "Br�val"
+            "last_name": "Brï¿½val"
         }
     },
     {
@@ -8867,7 +8975,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pierre de",
-            "last_name": "Br�ville"
+            "last_name": "Brï¿½ville"
         }
     },
     {
@@ -8970,7 +9078,7 @@
         "pk": 1110,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
+            "first_name": "Frï¿½dï¿½ric",
             "last_name": "Brisson"
         }
     },
@@ -8986,7 +9094,7 @@
         "pk": 1112,
         "model": "music.composer",
         "fields": {
-            "first_name": "Est�v�o de",
+            "first_name": "Estï¿½vï¿½o de",
             "last_name": "Brito"
         }
     },
@@ -8994,7 +9102,7 @@
         "pk": 1113,
         "model": "music.composer",
         "fields": {
-            "first_name": "Franti�ek Xaver",
+            "first_name": "Frantiï¿½ek Xaver",
             "last_name": "Brixi"
         }
     },
@@ -9122,7 +9230,7 @@
         "pk": 1129,
         "model": "music.composer",
         "fields": {
-            "first_name": "S�bastien de",
+            "first_name": "Sï¿½bastien de",
             "last_name": "Brossard"
         }
     },
@@ -9146,7 +9254,7 @@
         "pk": 1132,
         "model": "music.composer",
         "fields": {
-            "first_name": "�douard",
+            "first_name": "ï¿½douard",
             "last_name": "Broustet"
         }
     },
@@ -9154,7 +9262,7 @@
         "pk": 1133,
         "model": "music.composer",
         "fields": {
-            "first_name": "Cl�ment",
+            "first_name": "Clï¿½ment",
             "last_name": "Broutin"
         }
     },
@@ -9251,7 +9359,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Friedrich",
-            "last_name": "Br�ckner"
+            "last_name": "Brï¿½ckner"
         }
     },
     {
@@ -9259,7 +9367,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Oscar",
-            "last_name": "Br�ckner"
+            "last_name": "Brï¿½ckner"
         }
     },
     {
@@ -9275,15 +9383,15 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Alfred",
-            "last_name": "Br�ggemann"
+            "last_name": "Brï¿½ggemann"
         }
     },
     {
         "pk": 1149,
         "model": "music.composer",
         "fields": {
-            "first_name": "�douard",
-            "last_name": "Brugui�re"
+            "first_name": "ï¿½douard",
+            "last_name": "Bruguiï¿½re"
         }
     },
     {
@@ -9315,7 +9423,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ignaz",
-            "last_name": "Br�ll"
+            "last_name": "Brï¿½ll"
         }
     },
     {
@@ -9426,7 +9534,7 @@
         "pk": 1167,
         "model": "music.composer",
         "fields": {
-            "first_name": "Asbj�rn Ibsen",
+            "first_name": "Asbjï¿½rn Ibsen",
             "last_name": "Bruun"
         }
     },
@@ -9515,7 +9623,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ferdinand",
-            "last_name": "B�chler"
+            "last_name": "Bï¿½chler"
         }
     },
     {
@@ -9523,7 +9631,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ferdinand",
-            "last_name": "B�chner"
+            "last_name": "Bï¿½chner"
         }
     },
     {
@@ -9579,7 +9687,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Franz",
-            "last_name": "B�hler"
+            "last_name": "Bï¿½hler"
         }
     },
     {
@@ -9635,7 +9743,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hans von",
-            "last_name": "B�low"
+            "last_name": "Bï¿½low"
         }
     },
     {
@@ -9643,7 +9751,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johan",
-            "last_name": "B�low"
+            "last_name": "Bï¿½low"
         }
     },
     {
@@ -9691,7 +9799,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Frances",
-            "last_name": "Bunsen (n�e Waddington)"
+            "last_name": "Bunsen (nï¿½e Waddington)"
         }
     },
     {
@@ -9715,7 +9823,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gerd",
-            "last_name": "B�ntzly"
+            "last_name": "Bï¿½ntzly"
         }
     },
     {
@@ -9779,7 +9887,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Friedrich",
-            "last_name": "Burgm�ller"
+            "last_name": "Burgmï¿½ller"
         }
     },
     {
@@ -9787,14 +9895,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Norbert",
-            "last_name": "Burgm�ller"
+            "last_name": "Burgmï¿½ller"
         }
     },
     {
         "pk": 1213,
         "model": "music.composer",
         "fields": {
-            "first_name": "Emil Franti�ek",
+            "first_name": "Emil Frantiï¿½ek",
             "last_name": "Burian"
         }
     },
@@ -9963,7 +10071,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Henri",
-            "last_name": "B�sser"
+            "last_name": "Bï¿½sser"
         }
     },
     {
@@ -10035,7 +10143,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Paul",
-            "last_name": "B�ttner"
+            "last_name": "Bï¿½ttner"
         }
     },
     {
@@ -10050,7 +10158,7 @@
         "pk": 1245,
         "model": "music.composer",
         "fields": {
-            "first_name": "�kos",
+            "first_name": "ï¿½kos",
             "last_name": "Buttykay"
         }
     },
@@ -10099,7 +10207,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Antonio de",
-            "last_name": "Cabez�n"
+            "last_name": "Cabezï¿½n"
         }
     },
     {
@@ -10107,7 +10215,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hernando de",
-            "last_name": "Cabez�n"
+            "last_name": "Cabezï¿½n"
         }
     },
     {
@@ -10131,14 +10239,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pierre",
-            "last_name": "Cad�ac"
+            "last_name": "Cadï¿½ac"
         }
     },
     {
         "pk": 1256,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jes�s",
+            "first_name": "Jesï¿½s",
             "last_name": "Cadenas"
         }
     },
@@ -10331,7 +10439,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Antoine",
-            "last_name": "Calvi�re"
+            "last_name": "Calviï¿½re"
         }
     },
     {
@@ -10363,7 +10471,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Godefroid",
-            "last_name": "Camau�r"
+            "last_name": "Camauï¿½r"
         }
     },
     {
@@ -10458,8 +10566,8 @@
         "pk": 1296,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� de",
-            "last_name": "Campderr�s"
+            "first_name": "Josï¿½ de",
+            "last_name": "Campderrï¿½s"
         }
     },
     {
@@ -10498,7 +10606,7 @@
         "pk": 1301,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�",
+            "first_name": "Andrï¿½",
             "last_name": "Campra"
         }
     },
@@ -10522,7 +10630,7 @@
         "pk": 1304,
         "model": "music.composer",
         "fields": {
-            "first_name": "C�ndido",
+            "first_name": "Cï¿½ndido",
             "last_name": "Candi"
         }
     },
@@ -10594,7 +10702,7 @@
         "pk": 1313,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� Avelino",
+            "first_name": "Josï¿½ Avelino",
             "last_name": "Canongia"
         }
     },
@@ -10650,7 +10758,7 @@
         "pk": 1320,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�",
+            "first_name": "Andrï¿½",
             "last_name": "Caplet"
         }
     },
@@ -10674,7 +10782,7 @@
         "pk": 1323,
         "model": "music.composer",
         "fields": {
-            "first_name": "Antonio Jos�",
+            "first_name": "Antonio Josï¿½",
             "last_name": "Cappa"
         }
     },
@@ -10770,7 +10878,7 @@
         "pk": 1335,
         "model": "music.composer",
         "fields": {
-            "first_name": "V�ctor",
+            "first_name": "Vï¿½ctor",
             "last_name": "Carbajo"
         }
     },
@@ -10826,7 +10934,7 @@
         "pk": 1342,
         "model": "music.composer",
         "fields": {
-            "first_name": "C�lanie",
+            "first_name": "Cï¿½lanie",
             "last_name": "Carissan"
         }
     },
@@ -11003,7 +11111,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Teresa",
-            "last_name": "Carre�o"
+            "last_name": "Carreï¿½o"
         }
     },
     {
@@ -11202,7 +11310,7 @@
         "pk": 1389,
         "model": "music.composer",
         "fields": {
-            "first_name": "C�sar A. de",
+            "first_name": "Cï¿½sar A. de",
             "last_name": "Casella"
         }
     },
@@ -11258,8 +11366,8 @@
         "pk": 1396,
         "model": "music.composer",
         "fields": {
-            "first_name": "Joaqu�n",
-            "last_name": "Cassad�"
+            "first_name": "Joaquï¿½n",
+            "last_name": "Cassadï¿½"
         }
     },
     {
@@ -11298,8 +11406,8 @@
         "pk": 1401,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren�",
-            "last_name": "De Cast�ra"
+            "first_name": "Renï¿½",
+            "last_name": "De Castï¿½ra"
         }
     },
     {
@@ -11314,7 +11422,7 @@
         "pk": 1403,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jes�s",
+            "first_name": "Jesï¿½s",
             "last_name": "Castillo"
         }
     },
@@ -11418,7 +11526,7 @@
         "pk": 1416,
         "model": "music.composer",
         "fields": {
-            "first_name": "Alejandro Garc�a",
+            "first_name": "Alejandro Garcï¿½a",
             "last_name": "Caturla"
         }
     },
@@ -11530,7 +11638,7 @@
         "pk": 1430,
         "model": "music.composer",
         "fields": {
-            "first_name": "�douard",
+            "first_name": "ï¿½douard",
             "last_name": "Cazaneuve"
         }
     },
@@ -11602,7 +11710,7 @@
         "pk": 1439,
         "model": "music.composer",
         "fields": {
-            "first_name": "Nicol�",
+            "first_name": "Nicolï¿½",
             "last_name": "Celega"
         }
     },
@@ -11699,7 +11807,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Joseph-Antoine-Joachim",
-            "last_name": "C�rutti"
+            "last_name": "Cï¿½rutti"
         }
     },
     {
@@ -11802,7 +11910,7 @@
         "pk": 1464,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne",
+            "first_name": "Eugï¿½ne",
             "last_name": "Chaine"
         }
     },
@@ -11819,7 +11927,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jacques Champion de",
-            "last_name": "Chambonni�res"
+            "last_name": "Chambonniï¿½res"
         }
     },
     {
@@ -11827,14 +11935,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Nicolas",
-            "last_name": "Chami�"
+            "last_name": "Chamiï¿½"
         }
     },
     {
         "pk": 1468,
         "model": "music.composer",
         "fields": {
-            "first_name": "C�cile",
+            "first_name": "Cï¿½cile",
             "last_name": "Chaminade"
         }
     },
@@ -11874,7 +11982,7 @@
         "pk": 1473,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois de",
+            "first_name": "Franï¿½ois de",
             "last_name": "Chancy"
         }
     },
@@ -11890,7 +11998,7 @@
         "pk": 1475,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren�",
+            "first_name": "Renï¿½",
             "last_name": "Chansarel"
         }
     },
@@ -11899,7 +12007,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jean de",
-            "last_name": "Chant�rac"
+            "last_name": "Chantï¿½rac"
         }
     },
     {
@@ -11907,7 +12015,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ruperto",
-            "last_name": "Chap�"
+            "last_name": "Chapï¿½"
         }
     },
     {
@@ -12123,7 +12231,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Esprit Philippe",
-            "last_name": "Ch�deville"
+            "last_name": "Chï¿½deville"
         }
     },
     {
@@ -12131,7 +12239,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Nicolas",
-            "last_name": "Ch�deville"
+            "last_name": "Chï¿½deville"
         }
     },
     {
@@ -12179,7 +12287,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Auguste",
-            "last_name": "Ch�rion"
+            "last_name": "Chï¿½rion"
         }
     },
     {
@@ -12187,7 +12295,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Edmond",
-            "last_name": "Ch�rouvrier"
+            "last_name": "Chï¿½rouvrier"
         }
     },
     {
@@ -12218,7 +12326,7 @@
         "pk": 1516,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren�",
+            "first_name": "Renï¿½",
             "last_name": "Chesnet"
         }
     },
@@ -12386,7 +12494,7 @@
         "pk": 1537,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
+            "first_name": "Frï¿½dï¿½ric",
             "last_name": "Chopin"
         }
     },
@@ -12394,7 +12502,7 @@
         "pk": 1538,
         "model": "music.composer",
         "fields": {
-            "first_name": "Alexandre-�tienne",
+            "first_name": "Alexandre-ï¿½tienne",
             "last_name": "Choron"
         }
     },
@@ -12402,7 +12510,7 @@
         "pk": 1539,
         "model": "music.composer",
         "fields": {
-            "first_name": "Franti�ek Xaver",
+            "first_name": "Frantiï¿½ek Xaver",
             "last_name": "Chotek"
         }
     },
@@ -12427,7 +12535,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Coloman",
-            "last_name": "Chov�n"
+            "last_name": "Chovï¿½n"
         }
     },
     {
@@ -12435,7 +12543,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hedwige",
-            "last_name": "Chr�tien"
+            "last_name": "Chrï¿½tien"
         }
     },
     {
@@ -12467,7 +12575,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Emanuel",
-            "last_name": "Chv�la"
+            "last_name": "Chvï¿½la"
         }
     },
     {
@@ -12523,7 +12631,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Francesco",
-            "last_name": "Cil�a"
+            "last_name": "Cilï¿½a"
         }
     },
     {
@@ -12562,7 +12670,7 @@
         "pk": 1559,
         "model": "music.composer",
         "fields": {
-            "first_name": "�scar de la",
+            "first_name": "ï¿½scar de la",
             "last_name": "Cinna"
         }
     },
@@ -12570,7 +12678,7 @@
         "pk": 1560,
         "model": "music.composer",
         "fields": {
-            "first_name": "H�l�ne",
+            "first_name": "Hï¿½lï¿½ne",
             "last_name": "Ciolacou"
         }
     },
@@ -12787,7 +12895,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hermann Paul",
-            "last_name": "Clau�nitzer"
+            "last_name": "Clauï¿½nitzer"
         }
     },
     {
@@ -12795,7 +12903,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Josep Anselm",
-            "last_name": "Clav�"
+            "last_name": "Clavï¿½"
         }
     },
     {
@@ -12810,7 +12918,7 @@
         "pk": 1590,
         "model": "music.composer",
         "fields": {
-            "first_name": "R�my",
+            "first_name": "Rï¿½my",
             "last_name": "Clavers"
         }
     },
@@ -12819,7 +12927,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Marcel",
-            "last_name": "Clavi�"
+            "last_name": "Claviï¿½"
         }
     },
     {
@@ -12835,7 +12943,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jules",
-            "last_name": "Cl�mandh"
+            "last_name": "Clï¿½mandh"
         }
     },
     {
@@ -12850,7 +12958,7 @@
         "pk": 1595,
         "model": "music.composer",
         "fields": {
-            "first_name": "Dani�l",
+            "first_name": "Daniï¿½l",
             "last_name": "Clement dit Fiefvez"
         }
     },
@@ -12858,7 +12966,7 @@
         "pk": 1596,
         "model": "music.composer",
         "fields": {
-            "first_name": "Dani�l",
+            "first_name": "Daniï¿½l",
             "last_name": "Clement"
         }
     },
@@ -12883,7 +12991,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Louis-Nicolas",
-            "last_name": "Cl�rambault"
+            "last_name": "Clï¿½rambault"
         }
     },
     {
@@ -12891,7 +12999,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Justin",
-            "last_name": "Cl�rice"
+            "last_name": "Clï¿½rice"
         }
     },
     {
@@ -13162,7 +13270,7 @@
         "pk": 1634,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Colin de Blamont"
         }
     },
@@ -13234,7 +13342,7 @@
         "pk": 1643,
         "model": "music.composer",
         "fields": {
-            "first_name": "H�l�ne",
+            "first_name": "Hï¿½lï¿½ne",
             "last_name": "Collin"
         }
     },
@@ -13250,7 +13358,7 @@
         "pk": 1645,
         "model": "music.composer",
         "fields": {
-            "first_name": "Blas Mar�a de",
+            "first_name": "Blas Marï¿½a de",
             "last_name": "Colomer"
         }
     },
@@ -13259,7 +13367,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pedro Nolasco",
-            "last_name": "Col�n"
+            "last_name": "Colï¿½n"
         }
     },
     {
@@ -13282,7 +13390,7 @@
         "pk": 1649,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Combelle"
         }
     },
@@ -13306,7 +13414,7 @@
         "pk": 1652,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
+            "first_name": "Josï¿½",
             "last_name": "Comellas"
         }
     },
@@ -13331,7 +13439,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Loyset",
-            "last_name": "Comp�re"
+            "last_name": "Compï¿½re"
         }
     },
     {
@@ -13514,7 +13622,7 @@
         "pk": 1678,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne",
+            "first_name": "Eugï¿½ne",
             "last_name": "Cools"
         }
     },
@@ -13570,7 +13678,7 @@
         "pk": 1685,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� de",
+            "first_name": "Josï¿½ de",
             "last_name": "Cor-de-Lass"
         }
     },
@@ -13658,8 +13766,8 @@
         "pk": 1696,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� Luis",
-            "last_name": "C�rdova Casillas"
+            "first_name": "Josï¿½ Luis",
+            "last_name": "Cï¿½rdova Casillas"
         }
     },
     {
@@ -13722,7 +13830,7 @@
         "pk": 1704,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�/Librettist",
+            "first_name": "Andrï¿½/Librettist",
             "last_name": "Corneau"
         }
     },
@@ -13762,7 +13870,7 @@
         "pk": 1709,
         "model": "music.composer",
         "fields": {
-            "first_name": "S�verin",
+            "first_name": "Sï¿½verin",
             "last_name": "Cornet"
         }
     },
@@ -13866,8 +13974,8 @@
         "pk": 1722,
         "model": "music.composer",
         "fields": {
-            "first_name": "Marie-Th�r�se de",
-            "last_name": "Corva�a"
+            "first_name": "Marie-Thï¿½rï¿½se de",
+            "last_name": "Corvaï¿½a"
         }
     },
     {
@@ -13963,7 +14071,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jules",
-            "last_name": "Cost�"
+            "last_name": "Costï¿½"
         }
     },
     {
@@ -13978,7 +14086,7 @@
         "pk": 1736,
         "model": "music.composer",
         "fields": {
-            "first_name": "Napol�on",
+            "first_name": "Napolï¿½on",
             "last_name": "Coste"
         }
     },
@@ -14003,7 +14111,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Alberto",
-            "last_name": "Cot�"
+            "last_name": "Cotï¿½"
         }
     },
     {
@@ -14058,7 +14166,7 @@
         "pk": 1746,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Couperin"
         }
     },
@@ -14066,7 +14174,7 @@
         "pk": 1747,
         "model": "music.composer",
         "fields": {
-            "first_name": "Gervais-Fran�ois",
+            "first_name": "Gervais-Franï¿½ois",
             "last_name": "Couperin"
         }
     },
@@ -14090,7 +14198,7 @@
         "pk": 1750,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne-Joseph",
+            "first_name": "Eugï¿½ne-Joseph",
             "last_name": "Courjon"
         }
     },
@@ -14186,7 +14294,7 @@
         "pk": 1762,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�is",
+            "first_name": "Franï¿½is",
             "last_name": "Coye"
         }
     },
@@ -14387,7 +14495,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Octave",
-            "last_name": "Cr�mieux"
+            "last_name": "Crï¿½mieux"
         }
     },
     {
@@ -14395,7 +14503,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pierre",
-            "last_name": "Cr�mont"
+            "last_name": "Crï¿½mont"
         }
     },
     {
@@ -14475,7 +14583,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Bernard-Louis",
-            "last_name": "Croc�-Spinelli"
+            "last_name": "Crocï¿½-Spinelli"
         }
     },
     {
@@ -14515,7 +14623,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Alfred",
-            "last_name": "Cromb�"
+            "last_name": "Crombï¿½"
         }
     },
     {
@@ -14595,7 +14703,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johann",
-            "last_name": "Cr�ger"
+            "last_name": "Crï¿½ger"
         }
     },
     {
@@ -14610,8 +14718,8 @@
         "pk": 1815,
         "model": "music.composer",
         "fields": {
-            "first_name": "G�za",
-            "last_name": "Cs�th"
+            "first_name": "Gï¿½za",
+            "last_name": "Csï¿½th"
         }
     },
     {
@@ -14634,7 +14742,7 @@
         "pk": 1818,
         "model": "music.composer",
         "fields": {
-            "first_name": "Adri�n Antonio",
+            "first_name": "Adriï¿½n Antonio",
             "last_name": "Cuello Piraquibis"
         }
     },
@@ -14650,7 +14758,7 @@
         "pk": 1820,
         "model": "music.composer",
         "fields": {
-            "first_name": "C�sar",
+            "first_name": "Cï¿½sar",
             "last_name": "Cui"
         }
     },
@@ -14787,7 +14895,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Auguste",
-            "last_name": "C�d�s"
+            "last_name": "Cï¿½dï¿½s"
         }
     },
     {
@@ -15010,8 +15118,8 @@
         "pk": 1865,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne",
-            "last_name": "Damar�"
+            "first_name": "Eugï¿½ne",
+            "last_name": "Damarï¿½"
         }
     },
     {
@@ -15059,7 +15167,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jules",
-            "last_name": "Danb�"
+            "last_name": "Danbï¿½"
         }
     },
     {
@@ -15074,7 +15182,7 @@
         "pk": 1873,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jean-Fran�ois",
+            "first_name": "Jean-Franï¿½ois",
             "last_name": "Dandrieu"
         }
     },
@@ -15250,7 +15358,7 @@
         "pk": 1895,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�opold",
+            "first_name": "Lï¿½opold",
             "last_name": "Dauphin"
         }
     },
@@ -15258,7 +15366,7 @@
         "pk": 1896,
         "model": "music.composer",
         "fields": {
-            "first_name": "Louis-Fran�ois",
+            "first_name": "Louis-Franï¿½ois",
             "last_name": "Dauprat"
         }
     },
@@ -15306,7 +15414,7 @@
         "pk": 1902,
         "model": "music.composer",
         "fields": {
-            "first_name": "F�licien",
+            "first_name": "Fï¿½licien",
             "last_name": "David"
         }
     },
@@ -15555,14 +15663,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pierre-Louis",
-            "last_name": "Deff�s"
+            "last_name": "Deffï¿½s"
         }
     },
     {
         "pk": 1934,
         "model": "music.composer",
         "fields": {
-            "first_name": "S�ffren",
+            "first_name": "Sï¿½ffren",
             "last_name": "Degen"
         }
     },
@@ -15610,7 +15718,7 @@
         "pk": 1940,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�on",
+            "first_name": "Lï¿½on",
             "last_name": "Delafosse"
         }
     },
@@ -15626,7 +15734,7 @@
         "pk": 1942,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Delange"
         }
     },
@@ -15642,7 +15750,7 @@
         "pk": 1944,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�on",
+            "first_name": "Lï¿½on",
             "last_name": "Delcroix"
         }
     },
@@ -15650,7 +15758,7 @@
         "pk": 1945,
         "model": "music.composer",
         "fields": {
-            "first_name": "�douard Marie Ernest",
+            "first_name": "ï¿½douard Marie Ernest",
             "last_name": "Deldevez"
         }
     },
@@ -15658,7 +15766,7 @@
         "pk": 1946,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jo�o Pedro",
+            "first_name": "Joï¿½o Pedro",
             "last_name": "Delgado"
         }
     },
@@ -15666,7 +15774,7 @@
         "pk": 1947,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�o",
+            "first_name": "Lï¿½o",
             "last_name": "Delibes"
         }
     },
@@ -15834,7 +15942,7 @@
         "pk": 1968,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jean-Od�o",
+            "first_name": "Jean-Odï¿½o",
             "last_name": "Demars"
         }
     },
@@ -15867,7 +15975,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Charles",
-            "last_name": "Denn�e"
+            "last_name": "Dennï¿½e"
         }
     },
     {
@@ -15914,7 +16022,7 @@
         "pk": 1978,
         "model": "music.composer",
         "fields": {
-            "first_name": "�douard",
+            "first_name": "ï¿½douard",
             "last_name": "Deransart"
         }
     },
@@ -15923,14 +16031,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jean",
-            "last_name": "D�r�"
+            "last_name": "Dï¿½rï¿½"
         }
     },
     {
         "pk": 1980,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�s",
+            "first_name": "Andrï¿½s",
             "last_name": "Derecskei"
         }
     },
@@ -15955,14 +16063,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Xavier",
-            "last_name": "D�sargus"
+            "last_name": "Dï¿½sargus"
         }
     },
     {
         "pk": 1984,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren�",
+            "first_name": "Renï¿½",
             "last_name": "Descartes"
         }
     },
@@ -15995,14 +16103,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Prys",
-            "last_name": "D�sir�"
+            "last_name": "Dï¿½sirï¿½"
         }
     },
     {
         "pk": 1989,
         "model": "music.composer",
         "fields": {
-            "first_name": "No�l",
+            "first_name": "Noï¿½l",
             "last_name": "Desjoyeaux"
         }
     },
@@ -16042,7 +16150,7 @@
         "pk": 1994,
         "model": "music.composer",
         "fields": {
-            "first_name": "Louis C�sar",
+            "first_name": "Louis Cï¿½sar",
             "last_name": "Desormes"
         }
     },
@@ -16074,7 +16182,7 @@
         "pk": 1998,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr� Cardinal",
+            "first_name": "Andrï¿½ Cardinal",
             "last_name": "Destouches"
         }
     },
@@ -16098,7 +16206,7 @@
         "pk": 2001,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Devienne"
         }
     },
@@ -16123,7 +16231,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Nicolas",
-            "last_name": "Dez�de"
+            "last_name": "Dezï¿½de"
         }
     },
     {
@@ -16154,7 +16262,7 @@
         "pk": 2008,
         "model": "music.composer",
         "fields": {
-            "first_name": "Eug�ne",
+            "first_name": "Eugï¿½ne",
             "last_name": "Diaz"
         }
     },
@@ -16243,7 +16351,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Louis",
-            "last_name": "Di�mer"
+            "last_name": "Diï¿½mer"
         }
     },
     {
@@ -16418,7 +16526,7 @@
         "pk": 2041,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois Joseph",
+            "first_name": "Franï¿½ois Joseph",
             "last_name": "Dizi"
         }
     },
@@ -16491,7 +16599,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Theodor",
-            "last_name": "D�hler"
+            "last_name": "Dï¿½hler"
         }
     },
     {
@@ -16499,7 +16607,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Erno",
-            "last_name": "Dohn�nyi"
+            "last_name": "Dohnï¿½nyi"
         }
     },
     {
@@ -16523,7 +16631,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Charles",
-            "last_name": "Doll�"
+            "last_name": "Dollï¿½"
         }
     },
     {
@@ -16538,7 +16646,7 @@
         "pk": 2056,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
+            "first_name": "Frï¿½dï¿½ric",
             "last_name": "Dolmetsch"
         }
     },
@@ -16554,8 +16662,8 @@
         "pk": 2058,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� Ant�nio",
-            "last_name": "Dom�nguez"
+            "first_name": "Josï¿½ Antï¿½nio",
+            "last_name": "Domï¿½nguez"
         }
     },
     {
@@ -16634,7 +16742,7 @@
         "pk": 2068,
         "model": "music.composer",
         "fields": {
-            "first_name": "Johann�s",
+            "first_name": "Johannï¿½s",
             "last_name": "Donjon"
         }
     },
@@ -16650,7 +16758,7 @@
         "pk": 2070,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� Antonio de",
+            "first_name": "Josï¿½ Antonio de",
             "last_name": "Donostia"
         }
     },
@@ -16699,7 +16807,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Karl Heinrich",
-            "last_name": "D�ring"
+            "last_name": "Dï¿½ring"
         }
     },
     {
@@ -16707,7 +16815,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Wilhelm",
-            "last_name": "D�ring"
+            "last_name": "Dï¿½ring"
         }
     },
     {
@@ -16754,8 +16862,8 @@
         "pk": 2083,
         "model": "music.composer",
         "fields": {
-            "first_name": "Niccol�",
-            "last_name": "D�thel"
+            "first_name": "Niccolï¿½",
+            "last_name": "Dï¿½thel"
         }
     },
     {
@@ -16778,7 +16886,7 @@
         "pk": 2086,
         "model": "music.composer",
         "fields": {
-            "first_name": "Cl�ment",
+            "first_name": "Clï¿½ment",
             "last_name": "Doucet"
         }
     },
@@ -16851,7 +16959,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Josef",
-            "last_name": "Drahlovsk�"
+            "last_name": "Drahlovskï¿½"
         }
     },
     {
@@ -16874,7 +16982,7 @@
         "pk": 2098,
         "model": "music.composer",
         "fields": {
-            "first_name": "Franti�ek Alois",
+            "first_name": "Frantiï¿½ek Alois",
             "last_name": "Drdla"
         }
     },
@@ -17059,7 +17167,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Till Claudius",
-            "last_name": "Dr�scher"
+            "last_name": "Drï¿½scher"
         }
     },
     {
@@ -17074,7 +17182,7 @@
         "pk": 2123,
         "model": "music.composer",
         "fields": {
-            "first_name": "Louis Fran�ois Philippe",
+            "first_name": "Louis Franï¿½ois Philippe",
             "last_name": "Drouet"
         }
     },
@@ -17098,7 +17206,7 @@
         "pk": 2126,
         "model": "music.composer",
         "fields": {
-            "first_name": "L�on",
+            "first_name": "Lï¿½on",
             "last_name": "Du Bois"
         }
     },
@@ -17147,7 +17255,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Andreas",
-            "last_name": "D�ben"
+            "last_name": "Dï¿½ben"
         }
     },
     {
@@ -17155,14 +17263,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gustaf",
-            "last_name": "D�ben"
+            "last_name": "Dï¿½ben"
         }
     },
     {
         "pk": 2134,
         "model": "music.composer",
         "fields": {
-            "first_name": "Th�odore",
+            "first_name": "Thï¿½odore",
             "last_name": "Dubois"
         }
     },
@@ -17258,7 +17366,7 @@
         "pk": 2146,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
+            "first_name": "Franï¿½ois",
             "last_name": "Dulot"
         }
     },
@@ -17290,7 +17398,7 @@
         "pk": 2150,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jean-Fran�ois",
+            "first_name": "Jean-Franï¿½ois",
             "last_name": "Dumon"
         }
     },
@@ -17298,7 +17406,7 @@
         "pk": 2151,
         "model": "music.composer",
         "fields": {
-            "first_name": "Charles-Fran�ois",
+            "first_name": "Charles-Franï¿½ois",
             "last_name": "Dumonchau"
         }
     },
@@ -17443,7 +17551,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Marcel",
-            "last_name": "Dupr�"
+            "last_name": "Duprï¿½"
         }
     },
     {
@@ -17538,8 +17646,8 @@
         "pk": 2181,
         "model": "music.composer",
         "fields": {
-            "first_name": "Sebasti�n",
-            "last_name": "Dur�n"
+            "first_name": "Sebastiï¿½n",
+            "last_name": "Durï¿½n"
         }
     },
     {
@@ -17547,15 +17655,15 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johann Ruprecht",
-            "last_name": "D�rrner"
+            "last_name": "Dï¿½rrner"
         }
     },
     {
         "pk": 2183,
         "model": "music.composer",
         "fields": {
-            "first_name": "Franti�ek Xaver",
-            "last_name": "Du�ek"
+            "first_name": "Frantiï¿½ek Xaver",
+            "last_name": "Duï¿½ek"
         }
     },
     {
@@ -17586,7 +17694,7 @@
         "pk": 2187,
         "model": "music.composer",
         "fields": {
-            "first_name": "Am�d�e",
+            "first_name": "Amï¿½dï¿½e",
             "last_name": "Dutacq"
         }
     },
@@ -17602,7 +17710,7 @@
         "pk": 2189,
         "model": "music.composer",
         "fields": {
-            "first_name": "L'Abb�",
+            "first_name": "L'Abbï¿½",
             "last_name": "Duval"
         }
     },
@@ -17610,7 +17718,7 @@
         "pk": 2190,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric",
+            "first_name": "Frï¿½dï¿½ric",
             "last_name": "Duvernoy"
         }
     },
@@ -17642,8 +17750,8 @@
         "pk": 2194,
         "model": "music.composer",
         "fields": {
-            "first_name": "Anton�n",
-            "last_name": "Dvor�k"
+            "first_name": "Antonï¿½n",
+            "last_name": "Dvorï¿½k"
         }
     },
     {
@@ -17675,7 +17783,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Emils",
-            "last_name": "Darzin�"
+            "last_name": "Darzinï¿½"
         }
     },
     {
@@ -17971,7 +18079,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Albert",
-            "last_name": "Eibensch�tz"
+            "last_name": "Eibenschï¿½tz"
         }
     },
     {
@@ -18098,7 +18206,7 @@
         "pk": 2251,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�-Fr�d�ric",
+            "first_name": "Andrï¿½-Frï¿½dï¿½ric",
             "last_name": "Eler"
         }
     },
@@ -18122,8 +18230,8 @@
         "pk": 2254,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
-            "last_name": "El�as"
+            "first_name": "Josï¿½",
+            "last_name": "Elï¿½as"
         }
     },
     {
@@ -18234,7 +18342,7 @@
         "pk": 2268,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�zef",
+            "first_name": "Jï¿½zef",
             "last_name": "Elsner"
         }
     },
@@ -18363,7 +18471,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ludwig",
-            "last_name": "Engl�nder"
+            "last_name": "Englï¿½nder"
         }
     },
     {
@@ -18443,7 +18551,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Max",
-            "last_name": "Erdmannsd�rfer"
+            "last_name": "Erdmannsdï¿½rfer"
         }
     },
     {
@@ -18498,7 +18606,7 @@
         "pk": 2301,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fr�d�ric d'",
+            "first_name": "Frï¿½dï¿½ric d'",
             "last_name": "Erlanger"
         }
     },
@@ -18595,7 +18703,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gotthard",
-            "last_name": "Erythr�us"
+            "last_name": "Erythrï¿½us"
         }
     },
     {
@@ -18611,7 +18719,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pedro da",
-            "last_name": "Esperan�a"
+            "last_name": "Esperanï¿½a"
         }
     },
     {
@@ -18619,15 +18727,15 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Elies",
-            "last_name": "Esp�"
+            "last_name": "Espï¿½"
         }
     },
     {
         "pk": 2317,
         "model": "music.composer",
         "fields": {
-            "first_name": "Joaqu�n",
-            "last_name": "Esp�n y Guill�n"
+            "first_name": "Joaquï¿½n",
+            "last_name": "Espï¿½n y Guillï¿½n"
         }
     },
     {
@@ -18778,7 +18886,7 @@
         "pk": 2336,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�-Joseph",
+            "first_name": "Andrï¿½-Joseph",
             "last_name": "Exaudet"
         }
     },
@@ -18963,7 +19071,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hans",
-            "last_name": "F�hrmann"
+            "last_name": "Fï¿½hrmann"
         }
     },
     {
@@ -19146,7 +19254,7 @@
         "pk": 2382,
         "model": "music.composer",
         "fields": {
-            "first_name": "�d�n",
+            "first_name": "ï¿½dï¿½n",
             "last_name": "Farkas"
         }
     },
@@ -19307,7 +19415,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gabriel",
-            "last_name": "Faur�"
+            "last_name": "Faurï¿½"
         }
     },
     {
@@ -19330,7 +19438,7 @@
         "pk": 2405,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�-Joseph",
+            "first_name": "Andrï¿½-Joseph",
             "last_name": "Fauvel"
         }
     },
@@ -19338,7 +19446,7 @@
         "pk": 2406,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ren�",
+            "first_name": "Renï¿½",
             "last_name": "Favarger"
         }
     },
@@ -19482,8 +19590,8 @@
         "pk": 2424,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
-            "last_name": "F�my"
+            "first_name": "Franï¿½ois",
+            "last_name": "Fï¿½my"
         }
     },
     {
@@ -19531,7 +19639,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Manuel",
-            "last_name": "Fern�ndez Caballero"
+            "last_name": "Fernï¿½ndez Caballero"
         }
     },
     {
@@ -19539,14 +19647,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Francisco",
-            "last_name": "Fern�ndez Palero"
+            "last_name": "Fernï¿½ndez Palero"
         }
     },
     {
         "pk": 2432,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ant�nio",
+            "first_name": "Antï¿½nio",
             "last_name": "Fernandez"
         }
     },
@@ -19555,7 +19663,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Oscar Lorenzo",
-            "last_name": "Fern�ndez"
+            "last_name": "Fernï¿½ndez"
         }
     },
     {
@@ -19563,7 +19671,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pablo Rodolfo",
-            "last_name": "Fern�ndez"
+            "last_name": "Fernï¿½ndez"
         }
     },
     {
@@ -19714,7 +19822,7 @@
         "pk": 2453,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
+            "first_name": "Josï¿½",
             "last_name": "Ferrer Esteve de Fujadas"
         }
     },
@@ -19722,7 +19830,7 @@
         "pk": 2454,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos�",
+            "first_name": "Josï¿½",
             "last_name": "Ferrer"
         }
     },
@@ -19738,7 +19846,7 @@
         "pk": 2456,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ra�l",
+            "first_name": "Raï¿½l",
             "last_name": "Ferrero"
         }
     },
@@ -19770,7 +19878,7 @@
         "pk": 2460,
         "model": "music.composer",
         "fields": {
-            "first_name": "Bartolom�",
+            "first_name": "Bartolomï¿½",
             "last_name": "Ferriol"
         }
     },
@@ -19850,8 +19958,8 @@
         "pk": 2470,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois-Joseph",
-            "last_name": "F�tis"
+            "first_name": "Franï¿½ois-Joseph",
+            "last_name": "Fï¿½tis"
         }
     },
     {
@@ -19859,7 +19967,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Oscar",
-            "last_name": "Fetr�s"
+            "last_name": "Fetrï¿½s"
         }
     },
     {
@@ -19883,7 +19991,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Antoine de",
-            "last_name": "F�vin"
+            "last_name": "Fï¿½vin"
         }
     },
     {
@@ -19891,7 +19999,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Henry",
-            "last_name": "F�vrier"
+            "last_name": "Fï¿½vrier"
         }
     },
     {
@@ -19899,7 +20007,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Pierre",
-            "last_name": "F�vrier"
+            "last_name": "Fï¿½vrier"
         }
     },
     {
@@ -19930,7 +20038,7 @@
         "pk": 2480,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jir�",
+            "first_name": "Jirï¿½",
             "last_name": "Fiedler"
         }
     },
@@ -19978,7 +20086,7 @@
         "pk": 2486,
         "model": "music.composer",
         "fields": {
-            "first_name": "Andr�",
+            "first_name": "Andrï¿½",
             "last_name": "Fijan"
         }
     },
@@ -20131,7 +20239,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Andrea Stefano",
-            "last_name": "Fior�"
+            "last_name": "Fiorï¿½"
         }
     },
     {
@@ -20226,7 +20334,7 @@
         "pk": 2517,
         "model": "music.composer",
         "fields": {
-            "first_name": "Matth�us",
+            "first_name": "Matthï¿½us",
             "last_name": "Fischer"
         }
     },
@@ -20330,7 +20438,7 @@
         "pk": 2530,
         "model": "music.composer",
         "fields": {
-            "first_name": "�douard",
+            "first_name": "ï¿½douard",
             "last_name": "Flament"
         }
     },
@@ -20355,7 +20463,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ange",
-            "last_name": "Fl�gier"
+            "last_name": "Flï¿½gier"
         }
     },
     {
@@ -20426,7 +20534,7 @@
         "pk": 2542,
         "model": "music.composer",
         "fields": {
-            "first_name": "H�l�ne",
+            "first_name": "Hï¿½lï¿½ne",
             "last_name": "Fleury"
         }
     },
@@ -20523,7 +20631,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Joachim Karl Melchior",
-            "last_name": "Fl�eler"
+            "last_name": "Flï¿½eler"
         }
     },
     {
@@ -20531,7 +20639,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gustav",
-            "last_name": "Fl�gel"
+            "last_name": "Flï¿½gel"
         }
     },
     {
@@ -21035,7 +21143,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Alban",
-            "last_name": "F�rster"
+            "last_name": "Fï¿½rster"
         }
     },
     {
@@ -21043,7 +21151,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Christoph",
-            "last_name": "F�rster"
+            "last_name": "Fï¿½rster"
         }
     },
     {
@@ -21051,7 +21159,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Emanuel Aloys",
-            "last_name": "F�rster"
+            "last_name": "Fï¿½rster"
         }
     },
     {
@@ -21067,7 +21175,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Kaspar",
-            "last_name": "F�rster"
+            "last_name": "Fï¿½rster"
         }
     },
     {
@@ -21154,7 +21262,7 @@
         "pk": 2633,
         "model": "music.composer",
         "fields": {
-            "first_name": "F�lix",
+            "first_name": "Fï¿½lix",
             "last_name": "Fourdrain"
         }
     },
@@ -21210,7 +21318,7 @@
         "pk": 2640,
         "model": "music.composer",
         "fields": {
-            "first_name": "Ant�nio",
+            "first_name": "Antï¿½nio",
             "last_name": "Fragoso"
         }
     },
@@ -21259,7 +21367,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Abbate D.",
-            "last_name": "Francisco � Tarento"
+            "last_name": "Francisco ï¿½ Tarento"
         }
     },
     {
@@ -21274,7 +21382,7 @@
         "pk": 2648,
         "model": "music.composer",
         "fields": {
-            "first_name": "C�sar",
+            "first_name": "Cï¿½sar",
             "last_name": "Franck"
         }
     },
@@ -21331,7 +21439,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Jacques",
-            "last_name": "Franco-Mend�s"
+            "last_name": "Franco-Mendï¿½s"
         }
     },
     {
@@ -21346,8 +21454,8 @@
         "pk": 2657,
         "model": "music.composer",
         "fields": {
-            "first_name": "Fran�ois",
-            "last_name": "Franc�ur"
+            "first_name": "Franï¿½ois",
+            "last_name": "Francï¿½ur"
         }
     },
     {
@@ -21427,7 +21535,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ferdinand",
-            "last_name": "Fr�nzl"
+            "last_name": "Frï¿½nzl"
         }
     },
     {
@@ -21435,7 +21543,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ignaz",
-            "last_name": "Fr�nzl"
+            "last_name": "Frï¿½nzl"
         }
     },
     {
@@ -21474,7 +21582,7 @@
         "pk": 2673,
         "model": "music.composer",
         "fields": {
-            "first_name": "Lu�s de",
+            "first_name": "Luï¿½s de",
             "last_name": "Freitas Branco"
         }
     },
@@ -21490,8 +21598,8 @@
         "pk": 2675,
         "model": "music.composer",
         "fields": {
-            "first_name": "Louis-Fran�ois-Alexandre",
-            "last_name": "Fr�lon"
+            "first_name": "Louis-Franï¿½ois-Alexandre",
+            "last_name": "Frï¿½lon"
         }
     },
     {
@@ -21731,7 +21839,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Friedrich Theodor",
-            "last_name": "Fr�hlich"
+            "last_name": "Frï¿½hlich"
         }
     },
     {
@@ -21739,7 +21847,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Johannes Frederik",
-            "last_name": "Fr�hlich"
+            "last_name": "Frï¿½hlich"
         }
     },
     {
@@ -21747,7 +21855,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Marco",
-            "last_name": "Fr�mter"
+            "last_name": "Frï¿½mter"
         }
     },
     {
@@ -21787,7 +21895,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Carl",
-            "last_name": "Fr�hling"
+            "last_name": "Frï¿½hling"
         }
     },
     {
@@ -21819,7 +21927,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Harald",
-            "last_name": "Frykl�f"
+            "last_name": "Fryklï¿½f"
         }
     },
     {
@@ -21891,14 +21999,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Ernst",
-            "last_name": "Fuchs-Sch�nbach"
+            "last_name": "Fuchs-Schï¿½nbach"
         }
     },
     {
         "pk": 2726,
         "model": "music.composer",
         "fields": {
-            "first_name": "Jos� Vicente",
+            "first_name": "Josï¿½ Vicente",
             "last_name": "Fuentes Castilla"
         }
     },
@@ -21907,7 +22015,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Gottlieb Christian",
-            "last_name": "F�ger"
+            "last_name": "Fï¿½ger"
         }
     },
     {
@@ -21915,7 +22023,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Robert",
-            "last_name": "F�hrer"
+            "last_name": "Fï¿½hrer"
         }
     },
     {
@@ -22019,14 +22127,14 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Anton Bernhard",
-            "last_name": "F�rstenau"
+            "last_name": "Fï¿½rstenau"
         }
     },
     {
         "pk": 2742,
         "model": "music.composer",
         "fields": {
-            "first_name": "J�nos",
+            "first_name": "Jï¿½nos",
             "last_name": "Fusz"
         }
     },
@@ -22043,7 +22151,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Julius",
-            "last_name": "Fuc�k"
+            "last_name": "Fucï¿½k"
         }
     },
     {
@@ -22130,7 +22238,7 @@
         "pk": 2755,
         "model": "music.composer",
         "fields": {
-            "first_name": "Nicol�",
+            "first_name": "Nicolï¿½",
             "last_name": "Gabrielli"
         }
     },
@@ -22275,7 +22383,7 @@
         "model": "music.composer",
         "fields": {
             "first_name": "Hans",
-            "last_name": "G�l"
+            "last_name": "Gï¿½l"
         }
     },
     {

@@ -7,4 +7,29 @@
 
 {% block body %}
     <h1>{{ composition.title }}, {{ composition.category }}</h1>
+
+    <p><a id="practicing" onclick="addToPracticing('{{composition.id}}')" class="btn">Practicing</a></p>
+    <p><a id="like" onclick="likeIt('{{composition.id}}')" class="btn">Like</a></p>
+
+{% endblock %}
+
+{% block extra_body %}
+    <script>
+        function addToPracticing (aId) {
+            $.ajax({
+                url: "{% url composition_practice composition.id %}",
+                cache: true
+            }).done(function( html ) {
+                
+            });
+        };
+        function likeIt (aId) {
+            $.ajax({
+                url: "{% url composition_like composition.id %}",
+                cache: true
+            }).done(function( html ) {
+                
+            });
+        };
+    </script>
 {% endblock %}

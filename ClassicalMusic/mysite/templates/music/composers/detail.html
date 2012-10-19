@@ -12,14 +12,55 @@
 	    </div>
 	    <div class="span">
 		  <h1>{{ composer.last_name }}, {{ composer.first_name }}</h1>
+		  <p>{{ composer.description }}</p>
 		</div>
 	</div>
-	<div class="well">
-		<ul>
-		{% for composition in composer.composition_set.all %}
-		    <li><a href="/music/compositions/{{ composition.id }}/">{{ composition.title }}</a></li>
-		{% endfor %}
-		</ul>
-	</div>
+	<ul class="tabs" data-tabs="tabs">
+       <li class="active"><a href="#compositions">{% trans "Compositions" %}</a></li>
+     </ul>
+     <div class="tab-content">
+       <div class="tab-pane active" id="compositions">
+		<table class="zebra-striped">
+		    <thead>
+		      <tr>
+		        <th>{% trans "Title" %}</th>
+		        <th>{% trans "Category" %}</th>
+                <th>{% trans "Duration" %}</th>
+		        <th>{% trans "Year" %}</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    {% for composition in composer.composition_set.all %}
+		        <tr>
+		        <td><a href="/music/compositions/{{ composition.id }}/">{{ composition.title }}</a></td>
+		        <td>{{ composition.category }}</td>
+		        <td>{{ composition.average_duration }}</td>
+		        <td>{{ composition.year }}</td>
+		      </tr>
+		    {% endfor %}
+		    </tbody>
+		  </table>
+       </div>
+    <p><a id="add-composition" href="{% url composition_add_to_composer composer.id %}" class="btn">Add Composition</a></p>
+    <p><a id="add-composer" href="{% url composer_add %}" class="btn">Add Composer</a></p>
 
+{% endblock %}
+
+{% block extra_body %}
+
+    <script>
+        $(function() {
+            $("#add-composition").modal({
+                backdrop: true
+            });
+        });
+    </script>
+    
+    <script>
+        $(function() {
+            $("#add-composer").modal({
+                backdrop: true
+            });
+        });
+    </script>
 {% endblock %}

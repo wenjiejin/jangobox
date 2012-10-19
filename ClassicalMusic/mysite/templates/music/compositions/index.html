@@ -3,16 +3,56 @@
 {% load i18n %}
 {% load ifsetting_tag %}
 
-{% block head_title %}{% trans "Browse Compositions" %}{% endblock %}
+{% block head_title %}{% trans "Browse Composers" %}{% endblock %}
 
 {% block body %}
-    {% if composition_list %}
-    <ul>
-    {% for composition in composition_list %}
-        <li><a href="/music/compositions/{{ composition.id }}/">{{ composition.title }}</a></li>
-    {% endfor %}
-    </ul>
-	{% else %}
-	    <p>No compositions are available.</p>
-	{% endif %}
+    <div class="pagination">
+	    <ul>
+	    {% for letter in alphabet %}
+	        {% if letter == startswith %}
+	                <li class="active"><a href="/music/compositions/?start={{ letter }}">{{letter}}</a></li>
+	        {% else %}
+	                <li><a href="/music/compositions/?start={{ letter }}">{{letter}}</a></li>
+	        {% endif %}
+	    {% endfor %}
+	    </ul>
+    </div>
+    <table class="zebra-striped">
+      <thead>
+        <tr>
+          <th>{% trans "Title" %}</th>
+          <th>{% trans "Category" %}</th>
+          <th>{% trans "Duration" %}</th>
+          <th>{% trans "Year" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for composition in composition_list %}
+          <tr>
+          <td><a href="/music/compositions/{{ composition.id }}/">{{ composition.title }}</a></td>
+          <td>{{ composition.category }}</td>
+          <td>{{ composition.average_duration }}</td>
+          <td>{{ composition.year }}</td>
+        </tr>
+      {% empty %}
+         <p>No composition is available.</p>
+      {% endfor %}
+      </tbody>
+    </table>
+    <div>
+	    <span class="step-links">
+	        {% if page_obj.has_previous %}
+	            <a href="?page={{ page_obj.previous_page_number }}&start={{startswith}}">previous</a>
+	        {% endif %}
+	
+	        <span class="current">
+	            Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+	        </span>
+	
+	        {% if page_obj.has_next %}
+	            <a href="?page={{ page_obj.next_page_number }}&start={{startswith}}">next</a>
+	        {% endif %}
+	    </span>
+	</div>
+
 {% endblock %}

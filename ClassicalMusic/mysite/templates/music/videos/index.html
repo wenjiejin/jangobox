@@ -6,28 +6,57 @@
 {% block head_title %}{% trans "Browse Videos" %}{% endblock %}
 
 {% block body %}
-    <div class="row,video_list">
-        <p>Original</p>
-        {% if ori_video_list %}
-        <div class="row">
-	        {% for video in video_list %}
-	         <div class="video">
-	             {{video.embeded|safe}}
-	         </div>
-	        {% endfor %}
-        </div>
-        {% endif %}
-    </div>
-    <div class="row,video_list">
-        <p>Favorite</p>
-        {% if fav_video_list %}
-        <div class="row">
-	        {% for video in fav_video_list %}
-	            <div class="video">
-	                {{video.embeded|safe}}
-	            </div>
-	        {% endfor %}
-        </div>
-        {% endif %}
-    </div>
+	<ul class="tabs" data-tabs="tabs">
+	  <li class="active"><a href="#original">{% trans "Original" %}</a></li>
+	  <li class=""><a href="#favorite">{% trans "Favorite" %}</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="original">
+	  </div>
+	  <div class="tab-pane" id="favorite">
+	  </div>
+	</div> <!-- End of tabpane -->
+{% endblock %}
+
+{% block extra_body %}
+    <script>
+	    function loadMoreVideos (aType, aPage) {
+	    	$.ajax({
+	            url: "{% url videos %}" + aType + "?page=" + aPage,
+	            cache: true
+	          }).done(function( html ) {
+	        	  var videos = $(html).find(".video");
+	        	  var pagiId = "#" + aType + "_video_pagination";
+                  var pagination = $(html).find(pagiId);
+	              $("#" + aType + "_video_list").append(videos);
+	              $(pagiId).remove();
+	              $("#original").append(pagination);
+	              $("#" + aType + "_add_video").modal({
+	                 backdrop: true
+	              });
+	          });
+	    };
+        $(function() {
+        	$.ajax({
+       		  url: "{% url video_list 'ori' %}",
+       		  cache: true
+       		}).done(function( html ) {
+       		  $("#original").append(html);
+       		  $("#ori_add_video").modal({
+                backdrop: true
+              });
+       		});
+        	
+        	$.ajax({
+                url: "{% url video_list 'fav' %}",
+                cache: true
+              }).done(function( html ) {
+                $("#favorite").append(html);
+                $("#fav_add_video").modal({
+                    backdrop: true
+                });
+              });
+        });
+
+    </script>
 {% endblock %}

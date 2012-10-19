@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.urlresolvers import reverse
+
 import re
 
 class Composer(models.Model):
@@ -10,6 +12,10 @@ class Composer(models.Model):
     # ...
     def __unicode__(self):
         return self.last_name + ', ' + self.first_name
+
+    def get_absolute_url(self):
+        kwargs = {"composer_id": self.pk}
+        return reverse("composer_detail", kwargs=kwargs)
 
 class Composition(models.Model):
     composer = models.ForeignKey(Composer)
@@ -27,6 +33,10 @@ class Composition(models.Model):
     # ...
     def __unicode__(self):
         return self.title + ', by ' + self.composer.last_name
+
+    def get_absolute_url(self):
+        kwargs = {"composition_id": self.pk}
+        return reverse("composition_detail", kwargs=kwargs)
 
 class Score(models.Model):
     composition = models.ForeignKey(Composition)
@@ -50,7 +60,7 @@ class Repertoire(models.Model):
 
 class Event(models.Model):
     user = models.ForeignKey(User)
-    title = models.TextField()
+    title = models.TextField(null=True, blank=True)
     time = models.DateTimeField()
     location = models.TextField(null=True, blank=True)
     description = models.TextField()
@@ -59,6 +69,10 @@ class Event(models.Model):
     # ...
     def __unicode__(self):
         return self.title
+
+    def get_absolute_url(self):
+        kwargs = {}
+        return reverse("events", kwargs=kwargs)
 
 class Video(models.Model):
     user = models.ForeignKey(User)
@@ -74,3 +88,7 @@ class Video(models.Model):
     # ...
     def __unicode__(self):
         return self.embeded
+
+    def get_absolute_url(self):
+        kwargs = {}
+        return reverse("videos", kwargs=kwargs)
